@@ -1,0 +1,70 @@
+Type,Location on Website,Current Placeholder,File Path,Notes for Client,Status
+VIDEO,Homepage - Founder Story,"Watch Haleh's 3-Minute Story",src/components/sections/FounderStory.tsx,"Need: 3-minute video of Haleh sharing her story. Format: MP4, recommended 1080p",Missing
+SCREENSHOT,Homepage - How It Works Step 1,"Assessment screenshot placeholder",src/components/sections/HowItWorks.tsx,"Need: Screenshot of the 7-minute assessment UI",Missing
+SCREENSHOT,Homepage - How It Works Step 2,"Profile screenshot placeholder",src/components/sections/HowItWorks.tsx,"Need: Screenshot of an Authentic Profile result",Missing
+SCREENSHOT,Homepage - How It Works Step 3,"Match screenshot placeholder",src/components/sections/HowItWorks.tsx,"Need: Screenshot showing 70%+ compatible matches",Missing
+PHOTO,Homepage - Founder Story,"SVG icon placeholder",src/components/sections/FounderStory.tsx,"Need: Professional photo of Haleh Gianni (headshot)",Missing
+PHOTO,Homepage - Testimonials,"SVG icon placeholder",src/components/sections/Testimonials.tsx,"Need: Photos of 4 testimonial members (or keep anonymous with initials)",Optional
+PHOTO,The Science Page - Dr. Zannah,"SVG icon placeholder",src/components/sections/Science.tsx,"Need: Professional photo of Dr. Zannah Hackett",Missing
+PHOTO,The Science Page - Haleh,"SVG icon placeholder",src/components/sections/Science.tsx,"Need: Professional photo of Haleh (can reuse)",Missing
+PHOTO,About Page - Team Section,"SVG icon placeholder",src/app/about/page.tsx,"Need: Team photos for about page",Missing
+NAME,Homepage - Hero Testimonial,"Sarah & David",src/lib/copy.ts,"Real couple name or keep as placeholder?",Review
+NAME,Homepage - Testimonials,"Sarah K.",src/lib/copy.ts,"Real member name or keep as placeholder?",Review
+NAME,Homepage - Testimonials,"Michael R.",src/lib/copy.ts,"Real member name or keep as placeholder?",Review
+NAME,Homepage - Testimonials,"Jennifer L.",src/lib/copy.ts,"Real member name or keep as placeholder?",Review
+NAME,Homepage - Testimonials,"Carlos M.",src/lib/copy.ts,"Real member name or keep as placeholder?",Review
+NAME,Founder Section,"Haleh Gianni",src/lib/copy.ts,"Confirm this is correct spelling",Confirm
+NAME,Science Page,"Dr. Zannah Hackett",src/lib/copy.ts,"Confirm this is correct name/title",Confirm
+STAT,Homepage - Stats Bar,"13,000+ Assessments",src/lib/copy.ts,"Is this accurate? Update if different",Confirm
+STAT,Homepage - Stats Bar,"30+ Years of Research",src/lib/copy.ts,"Is this accurate?",Confirm
+STAT,About Page,"200+ Active Members",src/lib/copy.ts,"Current accurate number?",Confirm
+STAT,About Page,"47 Couples Matched",src/lib/copy.ts,"Current accurate number?",Confirm
+STAT,About Page,"12 Events Hosted",src/lib/copy.ts,"Current accurate number?",Confirm
+STAT,Waitlist Page,"1,200+ on Waitlist",src/lib/copy.ts,"Current accurate number?",Confirm
+STAT,Homepage - Final CTA,"8 spots left for January",src/components/sections/FinalCTA.tsx,"Update monthly - current spots available",Update Monthly
+BLOG,Blog Page,"The Science of Compatibility: Why Dating Apps Get It Wrong",src/app/blog/page.tsx,"Need: Full article content (currently placeholder)",Missing Content
+BLOG,Blog Page,"Understanding Your Communication Style in Relationships",src/app/blog/page.tsx,"Need: Full article content (currently placeholder)",Missing Content
+BLOG,Blog Page,"Why Shared Interests Don't Matter as Much as You Think",src/app/blog/page.tsx,"Need: Full article content (currently placeholder)",Missing Content
+BLOG,Blog Page,"First Date Questions That Actually Matter",src/app/blog/page.tsx,"Need: Full article content (currently placeholder)",Missing Content
+BLOG,Blog Page,"Emotional Availability: What It Really Means",src/app/blog/page.tsx,"Need: Full article content (currently placeholder)",Missing Content
+BLOG,Blog Page,"Building AILO: A Founder's Journey",src/app/blog/page.tsx,"Need: Full article content (currently placeholder)",Missing Content
+BLOG,Blog Page,"Breaking the Pattern: Why You Keep Dating the Same Type",src/app/blog/page.tsx,"Need: Full article content (currently placeholder)",Missing Content
+BLOG,Blog Page,"The Modern Dating Paradox: More Options, Less Connection",src/app/blog/page.tsx,"Need: Full article content (currently placeholder)",Missing Content
+BLOG,Blog Page,"Authentic Connection in the Digital Age",src/app/blog/page.tsx,"Need: Full article content (currently placeholder)",Missing Content
+BLOG,Blog Page,"Red Flags vs. Preferences: Knowing the Difference",src/app/blog/page.tsx,"Need: Full article content (currently placeholder)",Missing Content
+IMAGE,Blog - Science of Compatibility,"/images/blog/DSCF8931-web.jpg",public/images/blog/,"Has image - review if appropriate",Has Image
+IMAGE,Blog - Communication Style,"/images/blog/LEN04168-web.jpg",public/images/blog/,"Has image - review if appropriate",Has Image
+IMAGE,Blog - Shared Interests,"/images/blog/DSCF8613-web.jpg",public/images/blog/,"Has image - review if appropriate",Has Image
+IMAGE,Blog - First Date Questions,"/images/blog/LEN03887-web.jpg",public/images/blog/,"Has image - review if appropriate",Has Image
+IMAGE,Blog - Emotional Availability,"/images/blog/DSCF8849-web.jpg",public/images/blog/,"Has image - review if appropriate",Has Image
+IMAGE,Blog - Founders Journey,"/images/blog/LEN04089-web.jpg",public/images/blog/,"Has image - review if appropriate",Has Image
+IMAGE,Blog - Breaking Pattern,"/images/blog/DSCF8337-web.jpg",public/images/blog/,"Has image - review if appropriate",Has Image
+IMAGE,Blog - Modern Dating,"/images/blog/LEN04265-web.jpg",public/images/blog/,"Has image - review if appropriate",Has Image
+IMAGE,Blog - Authentic Connection,"/images/blog/DSCF8560-web.jpg",public/images/blog/,"Has image - review if appropriate",Has Image
+IMAGE,Blog - Red Flags,"/images/blog/LEN04377-web.jpg",public/images/blog/,"Has image - review if appropriate",Has Image
+IMAGE,Events - Intimate Gatherings,"/images/events/DSCF8892-web.jpg",public/images/events/,"Has image - review if appropriate",Has Image
+IMAGE,Events - Monthly Mixers,"/images/events/LEN04364-web.jpg",public/images/events/,"Has image - review if appropriate",Has Image
+IMAGE,Events - Signature Events,"/images/events/DSCF8438-web.jpg",public/images/events/,"Has image - review if appropriate",Has Image
+IMAGE,Hero Section,"/images/hero/DSCF8765-web.jpg",public/images/hero/,"Has image - review if appropriate",Has Image
+IMAGE,Hero Section,"/images/hero/DSCF8768-web.jpg",public/images/hero/,"Has image - review if appropriate",Has Image
+IMAGE,Hero Section,"/images/hero/LEN04315-web.jpg",public/images/hero/,"Has image - review if appropriate",Has Image
+IMAGE,Hero Section,"/images/hero/LEN04353-web.jpg",public/images/hero/,"Has image - review if appropriate",Has Image
+IMAGE,Testimonials,"/images/testimonials/LEN03700-web.jpg",public/images/testimonials/,"Has image - review if appropriate",Has Image
+IMAGE,About Page,"/images/about/DSCF8088-web.jpg",public/images/about/,"Has image - review if appropriate",Has Image
+IMAGE,About Page,"/images/about/DSCF8098-web.jpg",public/images/about/,"Has image - review if appropriate",Has Image
+IMAGE,About Page,"/images/about/DSCF8520-web.jpg",public/images/about/,"Has image - review if appropriate",Has Image
+IMAGE,About Page,"/images/about/DSCF8529-web.jpg",public/images/about/,"Has image - review if appropriate",Has Image
+TESTIMONIAL QUOTE,Homepage - Hero,"This wasn't just another app — it was the last one I needed.",src/lib/copy.ts,"Real quote or keep as placeholder?",Review
+TESTIMONIAL QUOTE,Homepage - Testimonials,"I was skeptical about paying for matching...",src/lib/copy.ts,"Real quote or keep as placeholder?",Review
+TESTIMONIAL QUOTE,Homepage - Testimonials,"The 7-minute assessment was surprisingly deep...",src/lib/copy.ts,"Real quote or keep as placeholder?",Review
+TESTIMONIAL QUOTE,Homepage - Testimonials,"After 3 years of swiping, I was ready to give up...",src/lib/copy.ts,"Real quote or keep as placeholder?",Review
+TESTIMONIAL QUOTE,Homepage - Testimonials,"The compatibility breakdown made so much sense...",src/lib/copy.ts,"Real quote or keep as placeholder?",Review
+EVENT,Events Section,"Intimate Gatherings - Weekly - 8-12 people",src/components/sections/Events.tsx,"Confirm event details are accurate",Confirm
+EVENT,Events Section,"Monthly Mixers - Monthly - 30-50 people",src/components/sections/Events.tsx,"Confirm event details are accurate",Confirm
+EVENT,Events Section,"Signature Events - Quarterly - 100+ people",src/components/sections/Events.tsx,"Confirm event details are accurate",Confirm
+LEGAL,Apply Page,"Terms of Service link",src/app/apply/page.tsx,"Need: Link to Terms of Service page",Missing
+LEGAL,Apply Page,"Privacy Policy link",src/app/apply/page.tsx,"Need: Link to Privacy Policy page",Missing
+CONTACT,Footer/Contact,"Email address",Multiple files,"Need: Official contact email",Missing
+CONTACT,Footer/Contact,"Phone number",Multiple files,"Need: Official phone number (if applicable)",Optional
+SOCIAL,Footer,"Instagram link",Multiple files,"Need: Instagram URL",Missing
+SOCIAL,Footer,"LinkedIn link",Multiple files,"Need: LinkedIn URL",Optional

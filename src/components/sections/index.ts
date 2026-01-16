@@ -1,0 +1,14 @@
+export { Hero } from "./Hero";
+export { Problem } from "./Problem";
+export { Imagine } from "./Imagine";
+export { HowItWorks } from "./HowItWorks";
+export { Science } from "./Science";
+export { SampleMatch } from "./SampleMatch";
+export { Testimonials } from "./Testimonials";
+export { Events } from "./Events";
+export { DuoTeaser } from "./DuoTeaser";
+export { Guarantee } from "./Guarantee";
+export { Comparison } from "./Comparison";
+export { FounderStory } from "./FounderStory";
+export { FAQ } from "./FAQ";
+export { FinalCTA } from "./FinalCTA";

@@ -1,0 +1,351 @@
+Page,Section,Element,Copy,File Location
+Homepage,Hero,Badge,"Premium Matchmaking App · South Florida",src/components/sections/Hero.tsx
+Homepage,Hero,Headline,"Your Last Investment in Dating. Ever.",src/components/sections/Hero.tsx
+Homepage,Hero,Subhead,"Take a 7-minute assessment. Get matched only with people you're 70%+ compatible with. Powered by 30 years of behavioral science and a US patent.",src/components/sections/Hero.tsx
+Homepage,Hero,CTA Primary,"See If You Qualify",src/components/sections/Hero.tsx
+Homepage,Hero,CTA Secondary,"Watch How It Works",src/components/sections/Hero.tsx
+Homepage,Hero,Testimonial Quote,"We matched in 6 weeks. A year later, we're engaged.",src/components/sections/Hero.tsx
+Homepage,Hero,Testimonial Attribution,"— Sarah & David, AILO Members",src/components/sections/Hero.tsx
+Homepage,Problem,Badge,"The Real Problem",src/components/sections/Problem.tsx
+Homepage,Problem,Headline,"You've Done Everything Right. Dating Still Doesn't Work.",src/components/sections/Problem.tsx
+Homepage,Problem,Subhead,"You're successful. You know what you want. So why is this so hard?",src/components/sections/Problem.tsx
+Homepage,Problem,Pain Point 1 Title,"You're not looking for hookups. But that's all apps deliver.",src/components/sections/Problem.tsx
+Homepage,Problem,Pain Point 1 Description,"Endless swiping, zero serious prospects.",src/components/sections/Problem.tsx
+Homepage,Problem,Pain Point 2 Title,"Dates that look good on paper. Zero chemistry in person.",src/components/sections/Problem.tsx
+Homepage,Problem,Pain Point 2 Description,"Another wasted evening. Another dead end.",src/components/sections/Problem.tsx
+Homepage,Problem,Pain Point 3 Title,"Compatibility? You won't know until you're 3 months in.",src/components/sections/Problem.tsx
+Homepage,Problem,Pain Point 3 Description,"By then, you've already invested everything.",src/components/sections/Problem.tsx
+Homepage,Problem,Pain Point 4 Title,"You've tried everything. Same result.",src/components/sections/Problem.tsx
+Homepage,Problem,Pain Point 4 Description,"Hinge. Bumble. Raya. Nothing works.",src/components/sections/Problem.tsx
+Homepage,Problem,Closing Line 1,"It's not you.",src/components/sections/Problem.tsx
+Homepage,Problem,Closing Line 2,"The system was never built for people like you.",src/components/sections/Problem.tsx
+Homepage,Imagine,Badge,"What Changes",src/components/sections/Imagine.tsx
+Homepage,Imagine,Headline,"Before the First Date, You'll Know:",src/components/sections/Imagine.tsx
+Homepage,Imagine,Point 1 Title,"Their communication style",src/components/sections/Imagine.tsx
+Homepage,Imagine,Point 1 Description,"And whether it matches yours",src/components/sections/Imagine.tsx
+Homepage,Imagine,Point 2 Title,"How they handle conflict",src/components/sections/Imagine.tsx
+Homepage,Imagine,Point 2 Description,"And if you're compatible under stress",src/components/sections/Imagine.tsx
+Homepage,Imagine,Point 3 Title,"What they actually need",src/components/sections/Imagine.tsx
+Homepage,Imagine,Point 3 Description,"Not what their bio says",src/components/sections/Imagine.tsx
+Homepage,Imagine,Point 4 Title,"Why you'd work together",src/components/sections/Imagine.tsx
+Homepage,Imagine,Point 4 Description,"Backed by 30 years of science",src/components/sections/Imagine.tsx
+Homepage,Imagine,Closing,"No more guessing. No more wasted time.",src/components/sections/Imagine.tsx
+Homepage,Founder Story,Quote,"I spent 3 years on dating apps. Zero relationships. Then I found the science that actually predicts compatibility.",src/components/sections/FounderStory.tsx
+Homepage,Founder Story,Founder Name,"Haleh Gianni",src/components/sections/FounderStory.tsx
+Homepage,Founder Story,Founder Title,"Founder & CEO",src/components/sections/FounderStory.tsx
+Homepage,Founder Story,Journey Step 1 Label,"The Problem",src/components/sections/FounderStory.tsx
+Homepage,Founder Story,Journey Step 1 Text,"3 years on apps, nothing to show",src/components/sections/FounderStory.tsx
+Homepage,Founder Story,Journey Step 2 Label,"The Discovery",src/components/sections/FounderStory.tsx
+Homepage,Founder Story,Journey Step 2 Text,"Found Dr. Zannah's 30-year research",src/components/sections/FounderStory.tsx
+Homepage,Founder Story,Journey Step 3 Label,"The Insight",src/components/sections/FounderStory.tsx
+Homepage,Founder Story,Journey Step 3 Text,"Science solves what swiping can't",src/components/sections/FounderStory.tsx
+Homepage,Founder Story,Journey Step 4 Label,"The Solution",src/components/sections/FounderStory.tsx
+Homepage,Founder Story,Journey Step 4 Text,"Built the app I needed",src/components/sections/FounderStory.tsx
+Homepage,Founder Story,CTA,"Learn About the Science",src/components/sections/FounderStory.tsx
+Homepage,How It Works,Headline,"3 Steps to Your Last First Date",src/components/sections/HowItWorks.tsx
+Homepage,How It Works,Step 1 Title,"Complete the 7-Minute Assessment",src/components/sections/HowItWorks.tsx
+Homepage,How It Works,Step 1 Description,"Based on 30 years of behavioral science. Reveals your true compatibility profile.",src/components/sections/HowItWorks.tsx
+Homepage,How It Works,Step 2 Title,"Get Your Authentic Profile",src/components/sections/HowItWorks.tsx
+Homepage,How It Works,Step 2 Description,"No fake bios. AILO writes your profile based on who you actually are.",src/components/sections/HowItWorks.tsx
+Homepage,How It Works,Step 3 Title,"See Only 70%+ Matches",src/components/sections/HowItWorks.tsx
+Homepage,How It Works,Step 3 Description,"No swiping. Just people you're actually compatible with — and why.",src/components/sections/HowItWorks.tsx
+Homepage,How It Works,CTA,"Take the Assessment",src/components/sections/HowItWorks.tsx
+Homepage,Sample Match,Badge,"See What You Get",src/components/sections/SampleMatch.tsx
+Homepage,Sample Match,Headline,"This Is What a Match Looks Like",src/components/sections/SampleMatch.tsx
+Homepage,Sample Match,Subhead,"Real insights, not guesswork. Every match comes with a detailed compatibility breakdown.",src/components/sections/SampleMatch.tsx
+Homepage,Sample Match,Category 1,"Magnetism",src/components/sections/SampleMatch.tsx
+Homepage,Sample Match,Category 1 Insight,"Natural physical and energetic attraction patterns align",src/components/sections/SampleMatch.tsx
+Homepage,Sample Match,Category 2,"Communication",src/components/sections/SampleMatch.tsx
+Homepage,Sample Match,Category 2 Insight,"You both connect through deep conversation and quality time",src/components/sections/SampleMatch.tsx
+Homepage,Sample Match,Category 3,"Tolerance",src/components/sections/SampleMatch.tsx
+Homepage,Sample Match,Category 3 Insight,"Compatible stress responses — both need space to process",src/components/sections/SampleMatch.tsx
+Homepage,Sample Match,Category 4,"Motivators",src/components/sections/SampleMatch.tsx
+Homepage,Sample Match,Category 4 Insight,"Shared drivers: ambition, growth, and family values",src/components/sections/SampleMatch.tsx
+Homepage,Sample Match,Score Explanation Title,"What This Score Means",src/components/sections/SampleMatch.tsx
+Homepage,Sample Match,Score Explanation,"A 78% match indicates strong foundational compatibility. Our research shows couples above 70% have significantly higher relationship satisfaction and longevity.",src/components/sections/SampleMatch.tsx
+Homepage,Sample Match,CTA,"See If You Qualify",src/components/sections/SampleMatch.tsx
+Homepage,Testimonials,Badge,"Real Results",src/components/sections/Testimonials.tsx
+Homepage,Testimonials,Headline,"Stories from AILO Members",src/components/sections/Testimonials.tsx
+Homepage,Testimonials,Subhead,"Real people finding real compatibility — not just matches.",src/components/sections/Testimonials.tsx
+Homepage,Testimonials,Quote 1,"After 3 years on Hinge — 47 first dates, 0 relationships — AILO matched me in 6 weeks. Engaged 14 months later.",src/components/sections/Testimonials.tsx
+Homepage,Testimonials,Quote 1 Name,"Sarah K.",src/components/sections/Testimonials.tsx
+Homepage,Testimonials,Quote 1 Outcome,"Engaged after 14 months",src/components/sections/Testimonials.tsx
+Homepage,Testimonials,Quote 2,"The compatibility breakdown predicted exactly why my last 3 relationships failed. My AILO match is different. 8 months strong.",src/components/sections/Testimonials.tsx
+Homepage,Testimonials,Quote 2 Name,"Michael R.",src/components/sections/Testimonials.tsx
+Homepage,Testimonials,Quote 2 Outcome,"In relationship, 8 months",src/components/sections/Testimonials.tsx
+Homepage,Testimonials,Quote 3,"I finally understand why I kept choosing the wrong people. AILO showed me what I actually need — and found someone who has it.",src/components/sections/Testimonials.tsx
+Homepage,Testimonials,Quote 3 Name,"Jennifer L.",src/components/sections/Testimonials.tsx
+Homepage,Testimonials,Quote 3 Outcome,"Matched in 4 weeks",src/components/sections/Testimonials.tsx
+Homepage,Testimonials,Quote 4,"One assessment. One investment. Done with dating apps forever. Worth every dollar.",src/components/sections/Testimonials.tsx
+Homepage,Testimonials,Quote 4 Name,"Carlos M.",src/components/sections/Testimonials.tsx
+Homepage,Testimonials,Quote 4 Outcome,"In relationship, 6 months",src/components/sections/Testimonials.tsx
+Homepage,Testimonials,Stat 1 Value,"13,000+",src/components/sections/Testimonials.tsx
+Homepage,Testimonials,Stat 1 Label,"Assessments Completed",src/components/sections/Testimonials.tsx
+Homepage,Testimonials,Stat 2 Value,"30+",src/components/sections/Testimonials.tsx
+Homepage,Testimonials,Stat 2 Label,"Years of Research",src/components/sections/Testimonials.tsx
+Homepage,Testimonials,Stat 3 Value,"70%+",src/components/sections/Testimonials.tsx
+Homepage,Testimonials,Stat 3 Label,"Compatibility Threshold",src/components/sections/Testimonials.tsx
+Homepage,Guarantee,Badge,"Risk-Free",src/components/sections/Guarantee.tsx
+Homepage,Guarantee,Headline,"The 90-Day Match Guarantee",src/components/sections/Guarantee.tsx
+Homepage,Guarantee,Subhead,"3 compatible matches in 90 days. Or we make it right.",src/components/sections/Guarantee.tsx
+Homepage,Guarantee,Intro,"If we don't deliver, you get:",src/components/sections/Guarantee.tsx
+Homepage,Guarantee,Item 1 Title,"AILO Duo — Free for Life",src/components/sections/Guarantee.tsx
+Homepage,Guarantee,Item 1 Description,"Full access to our compatibility assessment tool, forever",src/components/sections/Guarantee.tsx
+Homepage,Guarantee,Item 2 Title,"VIP Event Access",src/components/sections/Guarantee.tsx
+Homepage,Guarantee,Item 2 Description,"Meet compatible singles in person at all AILO events",src/components/sections/Guarantee.tsx
+Homepage,Guarantee,Item 3 Title,"Priority Support",src/components/sections/Guarantee.tsx
+Homepage,Guarantee,Item 3 Description,"Direct line to our team to optimize your profile and matches",src/components/sections/Guarantee.tsx
+Homepage,Guarantee,Closing,"We stand behind the science. That's our promise.",src/components/sections/Guarantee.tsx
+Homepage,Guarantee,CTA,"See If You Qualify",src/components/sections/Guarantee.tsx
+Homepage,Events,Badge,"Beyond the App",src/components/sections/Events.tsx
+Homepage,Events,Headline,"Meet AILO Members In Person",src/components/sections/Events.tsx
+Homepage,Events,Subhead,"Our relationship workshops are where real connections happen. Not awkward singles mixers — elegant events with guided compatibility discussions.",src/components/sections/Events.tsx
+Homepage,Events,Event 1 Title,"Intimate Gatherings",src/components/sections/Events.tsx
+Homepage,Events,Event 1 Frequency,"Weekly",src/components/sections/Events.tsx
+Homepage,Events,Event 1 Size,"8-12 people",src/components/sections/Events.tsx
+Homepage,Events,Event 1 Description,"Small group workshops focused on deep connection and self-discovery",src/components/sections/Events.tsx
+Homepage,Events,Event 2 Title,"Monthly Mixers",src/components/sections/Events.tsx
+Homepage,Events,Event 2 Frequency,"Monthly",src/components/sections/Events.tsx
+Homepage,Events,Event 2 Size,"30-50 people",src/components/sections/Events.tsx
+Homepage,Events,Event 2 Description,"Elegant social events where meaningful conversations happen naturally",src/components/sections/Events.tsx
+Homepage,Events,Event 3 Title,"Signature Events",src/components/sections/Events.tsx
+Homepage,Events,Event 3 Frequency,"Quarterly",src/components/sections/Events.tsx
+Homepage,Events,Event 3 Size,"100+ people",src/components/sections/Events.tsx
+Homepage,Events,Event 3 Description,"Exclusive experiences at Miami's most sought-after venues",src/components/sections/Events.tsx
+Homepage,Events,VIP Badge,"AILO Members get VIP access to all events",src/components/sections/Events.tsx
+Homepage,Events,CTA,"Become a Member",src/components/sections/Events.tsx
+Homepage,Duo Teaser,Badge,"Not Ready to Commit?",src/components/sections/DuoTeaser.tsx
+Homepage,Duo Teaser,Headline,"Try the Science First — $29",src/components/sections/DuoTeaser.tsx
+Homepage,Duo Teaser,Subhead,"Test AILO's compatibility assessment with a friend, family member, or someone you're dating. See why it works before you invest in matching.",src/components/sections/DuoTeaser.tsx
+Homepage,Duo Teaser,Feature 1,"Compare with anyone",src/components/sections/DuoTeaser.tsx
+Homepage,Duo Teaser,Feature 2,"See compatibility score",src/components/sections/DuoTeaser.tsx
+Homepage,Duo Teaser,Feature 3,"Instant insights",src/components/sections/DuoTeaser.tsx
+Homepage,Duo Teaser,CTA,"Try AILO Duo",src/components/sections/DuoTeaser.tsx
+Homepage,FAQ,Headline,"Questions? We've Got Answers.",src/components/sections/FAQ.tsx
+Homepage,FAQ,Q1,"How is AILO different from dating apps?",src/components/sections/FAQ.tsx
+Homepage,FAQ,A1,"Dating apps show you everyone nearby and let you guess. We use patented behavioral science to only show you people you're actually compatible with. Fewer matches, but matches that make sense.",src/components/sections/FAQ.tsx
+Homepage,FAQ,Q2,"What happens after I complete the questionnaire?",src/components/sections/FAQ.tsx
+Homepage,FAQ,A2,"You'll book a strategy call with our team. We'll answer your questions and see if AILO is right for you. After joining, you'll complete the full Discovery Assessment in the app.",src/components/sections/FAQ.tsx
+Homepage,FAQ,Q3,"How long until I see matches?",src/components/sections/FAQ.tsx
+Homepage,FAQ,A3,"Most members receive their first matches within 7-14 days of completing the assessment. Timing depends on our current pool and your compatibility profile.",src/components/sections/FAQ.tsx
+Homepage,FAQ,Q4,"What's the investment?",src/components/sections/FAQ.tsx
+Homepage,FAQ,A4,"Traditional matchmakers charge $15,000-50,000 with no guarantees. AILO membership is a one-time investment of $999-1,499 depending on your situation — we'll discuss options on your call. Unlike monthly subscriptions, you pay once and keep access forever, including future matches, events, and all app updates.",src/components/sections/FAQ.tsx
+Homepage,FAQ,Q5,"I'm not in South Florida. Can I use AILO?",src/components/sections/FAQ.tsx
+Homepage,FAQ,A5,"We're currently matching in South Florida only. Join the waitlist and you'll get priority access when we expand to your area.",src/components/sections/FAQ.tsx
+Homepage,FAQ,Q6,"What if I don't get matches?",src/components/sections/FAQ.tsx
+Homepage,FAQ,A6,"That's what the 90-Day Guarantee is for. If you don't receive at least 3 compatible matches within 90 days, you get AILO Duo free for life plus VIP access to all our events.",src/components/sections/FAQ.tsx
+Homepage,Final CTA,Badge,"8 spots left for January",src/components/sections/FinalCTA.tsx
+Homepage,Final CTA,Headline,"This Is Your Last Investment in Dating",src/components/sections/FinalCTA.tsx
+Homepage,Final CTA,Subhead,"50 new members per month. Once you're in, you're in for life.",src/components/sections/FinalCTA.tsx
+Homepage,Final CTA,Social Proof,"Join 200+ members already matched in South Florida.",src/components/sections/FinalCTA.tsx
+Homepage,Final CTA,CTA Primary,"See If You Qualify",src/components/sections/FinalCTA.tsx
+Homepage,Final CTA,Divider,"OR",src/components/sections/FinalCTA.tsx
+Homepage,Final CTA,Non-SF Text,"Not in South Florida? We're expanding soon.",src/components/sections/FinalCTA.tsx
+Homepage,Final CTA,CTA Secondary,"Join the Waitlist for Your City",src/components/sections/FinalCTA.tsx
+Apply,Quiz Intro,Headline,"Quick Check: Are We Right for You?",src/app/apply/QuizContainer.tsx
+Apply,Quiz Intro,Subhead Line 1,"5 questions. 2 minutes.",src/app/apply/QuizContainer.tsx
+Apply,Quiz Intro,Subhead Line 2,"We'll tell you honestly if AILO can help.",src/app/apply/QuizContainer.tsx
+Apply,Quiz Intro,CTA,"Start",src/app/apply/QuizContainer.tsx
+Apply,Quiz Intro,Social Proof,"Based on 30 years of compatibility research",src/app/apply/QuizContainer.tsx
+Apply,Quiz Intro,Badge 1,"US Patent #8556630B2",src/app/apply/QuizContainer.tsx
+Apply,Quiz Intro,Badge 2,"70%+ matches only",src/app/apply/QuizContainer.tsx
+Apply,Quiz Intro,Badge 3,"~2 minutes",src/app/apply/QuizContainer.tsx
+Apply,Quiz Q1,Question,"Where do you currently live?",src/lib/quiz-data.ts
+Apply,Quiz Q1,Option A,"South Florida (Palm Beach, Broward, Miami-Dade)",src/lib/quiz-data.ts
+Apply,Quiz Q1,Option B,"Florida (outside South Florida)",src/lib/quiz-data.ts
+Apply,Quiz Q1,Option C,"U.S. (outside Florida)",src/lib/quiz-data.ts
+Apply,Quiz Q1,Option D,"Outside the U.S.",src/lib/quiz-data.ts
+Apply,Quiz Q2,Question,"What are you looking for?",src/lib/quiz-data.ts
+Apply,Quiz Q2,Option A,"A committed relationship — I'm ready",src/lib/quiz-data.ts
+Apply,Quiz Q2,Option B,"Something serious, but balancing priorities",src/lib/quiz-data.ts
+Apply,Quiz Q2,Option C,"Exploring, no rush",src/lib/quiz-data.ts
+Apply,Quiz Q2,Option D,"Just curious about AILO",src/lib/quiz-data.ts
+Apply,Quiz Q3,Question,"How would you describe your emotional availability?",src/lib/quiz-data.ts
+Apply,Quiz Q3,Option A,"Open and available",src/lib/quiz-data.ts
+Apply,Quiz Q3,Option B,"Mostly open, still processing past experiences",src/lib/quiz-data.ts
+Apply,Quiz Q3,Option C,"Working on it",src/lib/quiz-data.ts
+Apply,Quiz Q3,Option D,"Not fully available right now",src/lib/quiz-data.ts
+Apply,Quiz Q4,Question,"AILO membership is $999-1,499 (one-time). How does that feel?",src/lib/quiz-data.ts
+Apply,Quiz Q4,Option A,"Worth it for the right match",src/lib/quiz-data.ts
+Apply,Quiz Q4,Option B,"Open to it if the fit is right",src/lib/quiz-data.ts
+Apply,Quiz Q4,Option C,"Need to think about it",src/lib/quiz-data.ts
+Apply,Quiz Q4,Option D,"Not ready to invest that much",src/lib/quiz-data.ts
+Apply,Quiz Q5,Question,"When would you like to be in a relationship?",src/lib/quiz-data.ts
+Apply,Quiz Q5,Option A,"As soon as I find the right person",src/lib/quiz-data.ts
+Apply,Quiz Q5,Option B,"Within the next year",src/lib/quiz-data.ts
+Apply,Quiz Q5,Option C,"No specific timeline",src/lib/quiz-data.ts
+Apply,Quiz Q5,Option D,"Not sure yet",src/lib/quiz-data.ts
+Book Call,Hero,Badge,"You Qualified",src/app/book-call/page.tsx
+Book Call,Hero,Headline,"You're Exactly Who We Built AILO For",src/app/book-call/page.tsx
+Book Call,Hero,Subhead,"Book your complimentary strategy call below",src/app/book-call/page.tsx
+Book Call,Calendly,Title,"Schedule Your Call",src/app/book-call/page.tsx
+Book Call,Calendly,Subtitle,"20 minutes • Video or Phone",src/app/book-call/page.tsx
+Book Call,Calendly,Availability,"8 slots this week",src/app/book-call/page.tsx
+Book Call,Strategist,Name,"Haleh Gianni",src/app/book-call/page.tsx
+Book Call,Strategist,Title,"Founder & Matchmaking Strategist",src/app/book-call/page.tsx
+Book Call,Strategist,Bio,"15 years helping people find lasting love. I'll personally review your situation and show you exactly how AILO can help.",src/app/book-call/page.tsx
+Book Call,Call Agenda,Title,"On Your Call",src/app/book-call/page.tsx
+Book Call,Call Agenda,Item 1,"Your dating goals and what hasn't worked",src/app/book-call/page.tsx
+Book Call,Call Agenda,Item 2,"How AILO's science-based matching works",src/app/book-call/page.tsx
+Book Call,Call Agenda,Item 3,"Whether AILO is right for your situation",src/app/book-call/page.tsx
+Book Call,Pricing,Title,"Membership",src/app/book-call/page.tsx
+Book Call,Pricing,Type,"One-time",src/app/book-call/page.tsx
+Book Call,Pricing,Price Range,"$999 – $1,499",src/app/book-call/page.tsx
+Book Call,Pricing,Comparison,"vs. $15,000–50,000 traditional matchmakers",src/app/book-call/page.tsx
+Book Call,Pricing,Feature 1,"Lifetime access",src/app/book-call/page.tsx
+Book Call,Pricing,Feature 2,"90-day guarantee",src/app/book-call/page.tsx
+Book Call,Pricing,Feature 3,"No subscriptions",src/app/book-call/page.tsx
+Book Call,Trust,Feature 1,"No obligation",src/app/book-call/page.tsx
+Book Call,Trust,Feature 2,"20 minutes",src/app/book-call/page.tsx
+Book Call,Trust,Feature 3,"Video or phone",src/app/book-call/page.tsx
+Book Call,Social Proof,Text,"Join 200+ members finding better matches",src/app/book-call/page.tsx
+Book Call,Social Proof,Rating,"4.9/5",src/app/book-call/page.tsx
+Waitlist,Hero,Headline,"You're In!",src/app/waitlist/page.tsx
+Waitlist,Hero,Social Proof,"Join 1,200+ others waiting for AILO",src/app/waitlist/page.tsx
+Waitlist,Hero,Subhead,"We're expanding beyond South Florida soon. Get priority access when we launch in your city.",src/app/waitlist/page.tsx
+Waitlist,Form,Title,"Get Priority Access",src/app/waitlist/page.tsx
+Waitlist,While You Wait,Title,"While You Wait",src/app/waitlist/page.tsx
+Waitlist,While You Wait,Item 1 Title,"Follow Us",src/app/waitlist/page.tsx
+Waitlist,While You Wait,Item 1 Description,"Dating tips and compatibility insights",src/app/waitlist/page.tsx
+Waitlist,While You Wait,Item 1 Link,"@ailoapp",src/app/waitlist/page.tsx
+Waitlist,While You Wait,Item 2 Title,"Monthly Webinar",src/app/waitlist/page.tsx
+Waitlist,While You Wait,Item 2 Description,"Free compatibility workshop",src/app/waitlist/page.tsx
+Waitlist,While You Wait,Item 2 Link,"Register free",src/app/waitlist/page.tsx
+Waitlist,Footer,Promise,"We're expanding soon. When we launch in your area, you'll be first to know.",src/app/waitlist/page.tsx
+Not Ready,Hero,Headline,"Not the Right Time? That's Okay.",src/app/not-ready/page.tsx
+Not Ready,Hero,Subhead,"Finding the right person requires the right mindset. Here's how to get ready.",src/app/not-ready/page.tsx
+Not Ready,Newsletter,Title,"Get Ready for Love",src/app/not-ready/page.tsx
+Not Ready,Newsletter,Subhead,"Join 3,000+ people getting weekly insights:",src/app/not-ready/page.tsx
+Not Ready,Newsletter,Benefit 1,"How to know when you're emotionally ready",src/app/not-ready/page.tsx
+Not Ready,Newsletter,Benefit 2,"Communication patterns that predict success",src/app/not-ready/page.tsx
+Not Ready,Newsletter,Benefit 3,"Red flags vs. preferences: knowing the difference",src/app/not-ready/page.tsx
+Not Ready,Newsletter,CTA,"Subscribe",src/app/not-ready/page.tsx
+Not Ready,Personal Note,Quote,"I've been where you are. Taking time to prepare is a sign of maturity, not failure. When you're ready, we'll be here.",src/app/not-ready/page.tsx
+Not Ready,Personal Note,Attribution,"— Haleh",src/app/not-ready/page.tsx
+Not Ready,Waitlist,Title,"Check Back Later",src/app/not-ready/page.tsx
+Not Ready,Waitlist,Subhead,"When you're ready, we'll be here. Join the waitlist.",src/app/not-ready/page.tsx
+Not Ready,Footer,Reassurance,"There's no rush. The right match is worth waiting for.",src/app/not-ready/page.tsx
+The Science,Hero,Badge,"US Patent #8556630B2",src/app/the-science/page.tsx
+The Science,Hero,Headline,"The Science Behind Compatibility",src/app/the-science/page.tsx
+The Science,Hero,Subhead,"30 years of behavioral research. One breakthrough methodology.",src/app/the-science/page.tsx
+The Science,Research,Headline,"The Research",src/app/the-science/page.tsx
+The Science,Research,Description,"Dr. Zannah Hackett spent 30 years studying human nature and relationship dynamics. Her work, ""The Natural Mathematics of Man,"" became the foundation for AILO.",src/app/the-science/page.tsx
+The Science,Research,Quote,"Compatibility isn't about shared interests. It's about how two people's natural traits interact.",src/app/the-science/page.tsx
+The Science,Markers,Headline,"The 6 Compatibility Markers",src/app/the-science/page.tsx
+The Science,Markers,Subhead,"Based on decades of behavioral research",src/app/the-science/page.tsx
+The Science,Markers,Marker 1 Name,"Physical Traits",src/app/the-science/page.tsx
+The Science,Markers,Marker 1 Description,"Your natural traits that determine how you show up in the world",src/app/the-science/page.tsx
+The Science,Markers,Marker 2 Name,"Motivators",src/app/the-science/page.tsx
+The Science,Markers,Marker 2 Description,"What drives you — what must be fed and honored for you to thrive",src/app/the-science/page.tsx
+The Science,Markers,Marker 3 Name,"Tolerance",src/app/the-science/page.tsx
+The Science,Markers,Marker 3 Description,"Your boundaries — what you can and can't tolerate in a partner",src/app/the-science/page.tsx
+The Science,Markers,Marker 4 Name,"Communication",src/app/the-science/page.tsx
+The Science,Markers,Marker 4 Description,"How you relate, connect, and process information",src/app/the-science/page.tsx
+The Science,Markers,Marker 5 Name,"Perception",src/app/the-science/page.tsx
+The Science,Markers,Marker 5 Description,"Whether you see what's working or not working first",src/app/the-science/page.tsx
+The Science,Markers,Marker 6 Name,"Energy Level",src/app/the-science/page.tsx
+The Science,Markers,Marker 6 Description,"How much physical and emotional energy you bring to relationships",src/app/the-science/page.tsx
+The Science,What This Means,Headline,"What This Means For You",src/app/the-science/page.tsx
+The Science,What This Means,Description,"Instead of discovering incompatibilities after 6 months of dating, AILO reveals them before your first conversation. No more wasted time. No more ""it just didn't work out.""",src/app/the-science/page.tsx
+The Science,Assessment,Headline,"How the Assessment Works",src/app/the-science/page.tsx
+The Science,Assessment,Subhead,"The AILO Discovery Assessment measures three dimensions:",src/app/the-science/page.tsx
+The Science,Assessment,Dimension 1 Name,"Perception",src/app/the-science/page.tsx
+The Science,Assessment,Dimension 1 Description,"How you see yourself",src/app/the-science/page.tsx
+The Science,Assessment,Dimension 2 Name,"Reality",src/app/the-science/page.tsx
+The Science,Assessment,Dimension 2 Description,"How you actually show up",src/app/the-science/page.tsx
+The Science,Assessment,Dimension 3 Name,"Expression",src/app/the-science/page.tsx
+The Science,Assessment,Dimension 3 Description,"How others experience you",src/app/the-science/page.tsx
+The Science,Assessment,Closing,"In 7 minutes, we capture what takes years to discover through dating.",src/app/the-science/page.tsx
+The Science,Team,Headline,"The Team Behind the Science",src/app/the-science/page.tsx
+The Science,Team,Dr Zannah Name,"Dr. Zannah Hackett",src/app/the-science/page.tsx
+The Science,Team,Dr Zannah Title,"Chief Science Officer",src/app/the-science/page.tsx
+The Science,Team,Dr Zannah Credential 1,"30 years researching human nature",src/app/the-science/page.tsx
+The Science,Team,Dr Zannah Credential 2,"Creator of ""The Natural Mathematics of Man""",src/app/the-science/page.tsx
+The Science,Team,Dr Zannah Credential 3,"Founder of Y.O.U. Institute",src/app/the-science/page.tsx
+The Science,Team,Dr Zannah Credential 4,"Curriculum approved by CA Board of Behavioral Sciences",src/app/the-science/page.tsx
+The Science,Team,Haleh Name,"Haleh Gianni",src/app/the-science/page.tsx
+The Science,Team,Haleh Title,"CEO",src/app/the-science/page.tsx
+The Science,Team,Haleh Credential 1,"15 years as relationship coach",src/app/the-science/page.tsx
+The Science,Team,Haleh Credential 2,"Trained in the Y.O.U. methodology",src/app/the-science/page.tsx
+The Science,Team,Haleh Credential 3,"10+ years as Senior Systems Quality Engineer",src/app/the-science/page.tsx
+The Science,Team,Haleh Credential 4,"I built the dating service I wish existed",src/app/the-science/page.tsx
+The Science,CTA,Headline,"Ready to discover your compatibility profile?",src/app/the-science/page.tsx
+The Science,CTA,Button,"See If You Qualify",src/app/the-science/page.tsx
+About,Hero,Headline,"We Built the Dating Service We Wished Existed",src/app/about/page.tsx
+About,Haleh Story,Headline,"Haleh's Story",src/app/about/page.tsx
+About,Haleh Story,Quote 1,"I spent years on dating apps, meeting people who looked great on paper but never felt right. I knew there had to be a better way.",src/app/about/page.tsx
+About,Haleh Story,Quote 2,"Then I met Dr. Zannah and learned about her 30 years of research on human compatibility. Everything clicked.",src/app/about/page.tsx
+About,Haleh Story,Quote 3,"I didn't build another dating app. I built the one I wish existed — one that shows you who actually fits, not just who's nearby.",src/app/about/page.tsx
+About,Haleh Story,Background Title,"Background",src/app/about/page.tsx
+About,Haleh Story,Background 1,"15 years as relationship coach",src/app/about/page.tsx
+About,Haleh Story,Background 2,"Trained in the Y.O.U. methodology",src/app/about/page.tsx
+About,Haleh Story,Background 3,"10+ years as Senior Systems Quality Engineer",src/app/about/page.tsx
+About,Dr Zannah Story,Headline,"Dr. Zannah's Story",src/app/about/page.tsx
+About,Dr Zannah Story,Quote 1,"For 30 years, I've studied what makes people compatible. Not what they think they want — what actually works.",src/app/about/page.tsx
+About,Dr Zannah Story,Quote 2,"The methodology behind AILO comes from decades of research at Y.O.U. Institute, approved by the California Board of Behavioral Sciences.",src/app/about/page.tsx
+About,Dr Zannah Story,Quote 3,"When Haleh came to me with the vision for AILO, I knew this was the opportunity to bring this science to people who needed it most.",src/app/about/page.tsx
+About,Dr Zannah Story,Credentials Title,"Credentials",src/app/about/page.tsx
+About,Dr Zannah Story,Credential 1,"30 years researching human nature",src/app/about/page.tsx
+About,Dr Zannah Story,Credential 2,"Creator of ""The Natural Mathematics of Man""",src/app/about/page.tsx
+About,Dr Zannah Story,Credential 3,"Founder of Y.O.U. Institute",src/app/about/page.tsx
+About,Dr Zannah Story,Credential 4,"Curriculum approved by CA Board of Behavioral Sciences",src/app/about/page.tsx
+About,Dr Zannah Story,Credential 5,"Author, Behaviorist, Educator",src/app/about/page.tsx
+About,Stats,Stat 1 Value,"200+",src/app/about/page.tsx
+About,Stats,Stat 1 Label,"Active Members",src/app/about/page.tsx
+About,Stats,Stat 2 Value,"47",src/app/about/page.tsx
+About,Stats,Stat 2 Label,"Couples Matched",src/app/about/page.tsx
+About,Stats,Stat 3 Value,"30+",src/app/about/page.tsx
+About,Stats,Stat 3 Label,"Years Research",src/app/about/page.tsx
+About,Stats,Stat 4 Value,"12",src/app/about/page.tsx
+About,Stats,Stat 4 Label,"Events Hosted",src/app/about/page.tsx
+About,Mission,Headline,"Why We Do This",src/app/about/page.tsx
+About,Mission,Paragraph 1,"Every week, we get messages from people who've been hurt by dating apps. People who've wasted years on bad matches. People who are ready to give up.",src/app/about/page.tsx
+About,Mission,Paragraph 2,"We built AILO because everyone deserves to find someone who actually fits.",src/app/about/page.tsx
+About,Community,Headline,"Our Community",src/app/about/page.tsx
+About,Community,Subhead,"Real connections happen at our exclusive member events in South Florida.",src/app/about/page.tsx
+About,CTA,Headline,"Ready to experience the difference?",src/app/about/page.tsx
+About,CTA,Button,"See If You Qualify",src/app/about/page.tsx
+Duo,Hero,Badge,"Try the Science — $29",src/app/duo/page.tsx
+Duo,Hero,Headline,"Are You Actually Compatible?",src/app/duo/page.tsx
+Duo,Hero,Subhead,"Test AILO's compatibility assessment with your partner, friend, or someone you're dating. See why the science works — before you invest in full membership.",src/app/duo/page.tsx
+Duo,Hero,CTA,"Get AILO Duo",src/app/duo/page.tsx
+Duo,What's Included,Headline,"What's Included",src/app/duo/page.tsx
+Duo,What's Included,Feature 1 Title,"Two Assessments",src/app/duo/page.tsx
+Duo,What's Included,Feature 1 Description,"Both of you complete AILO's compatibility assessment",src/app/duo/page.tsx
+Duo,What's Included,Feature 2 Title,"Compatibility Report",src/app/duo/page.tsx
+Duo,What's Included,Feature 2 Description,"See your compatibility score and detailed breakdown",src/app/duo/page.tsx
+Duo,What's Included,Feature 3 Title,"Communication Insights",src/app/duo/page.tsx
+Duo,What's Included,Feature 3 Description,"Learn how you naturally connect and where you might clash",src/app/duo/page.tsx
+Duo,What's Included,Feature 4 Title,"Relationship Roadmap",src/app/duo/page.tsx
+Duo,What's Included,Feature 4 Description,"Understand your strengths and growth areas as a couple",src/app/duo/page.tsx
+Duo,Use Cases,Headline,"Perfect For Every Stage",src/app/duo/page.tsx
+Duo,Use Cases,Subhead,"Whether you're just starting out or years into your relationship",src/app/duo/page.tsx
+Duo,Use Cases,Case 1 Title,"New Relationships",src/app/duo/page.tsx
+Duo,Use Cases,Case 1 Description,"Know if you're truly compatible before you invest more time",src/app/duo/page.tsx
+Duo,Use Cases,Case 2 Title,"Serious Dating",src/app/duo/page.tsx
+Duo,Use Cases,Case 2 Description,"Discover what makes your connection work — and what to watch for",src/app/duo/page.tsx
+Duo,Use Cases,Case 3 Title,"Committed Couples",src/app/duo/page.tsx
+Duo,Use Cases,Case 3 Description,"Deepen your understanding and strengthen your bond",src/app/duo/page.tsx
+Duo,Use Cases,Case 4 Title,"Considering Marriage",src/app/duo/page.tsx
+Duo,Use Cases,Case 4 Description,"Get clarity before making a lifetime commitment",src/app/duo/page.tsx
+Duo,How It Works,Headline,"How It Works",src/app/duo/page.tsx
+Duo,How It Works,Step 1 Title,"You Take the Assessment",src/app/duo/page.tsx
+Duo,How It Works,Step 1 Description,"Complete AILO's compatibility assessment (7 minutes)",src/app/duo/page.tsx
+Duo,How It Works,Step 2 Title,"Invite Your Partner",src/app/duo/page.tsx
+Duo,How It Works,Step 2 Description,"Share a link with the person you want to compare with",src/app/duo/page.tsx
+Duo,How It Works,Step 3 Title,"Get Your Report",src/app/duo/page.tsx
+Duo,How It Works,Step 3 Description,"Once both complete, receive your detailed compatibility analysis",src/app/duo/page.tsx
+Duo,Testimonial,Quote,"We'd been dating for 6 months and everything felt right, but I wanted to be sure. AILO Duo showed us exactly why we work — and the few things to watch for. Best decision we made.",src/app/duo/page.tsx
+Duo,Testimonial,Attribution,"— Rachel & James, Together 2 Years",src/app/duo/page.tsx
+Duo,CTA,Headline,"Ready to Test Your Compatibility?",src/app/duo/page.tsx
+Duo,CTA,Price Line,"AILO Duo is just $29 — one-time, for both of you.",src/app/duo/page.tsx
+Duo,CTA,Value Prop,"Two assessments. One compatibility report. Zero guesswork.",src/app/duo/page.tsx
+Duo,CTA,Member Note,"Already an AILO member? Duo is included free with your membership.",src/app/duo/page.tsx
+Blog,Hero,Headline,"Dating Insights",src/app/blog/page.tsx
+Blog,Hero,Subhead,"Tips, research, and real talk about modern dating and compatibility.",src/app/blog/page.tsx
+Blog,Newsletter,Headline,"Get Dating Insights Weekly",src/app/blog/page.tsx
+Blog,Newsletter,Subhead,"Join 3,000+ readers getting science-backed dating advice every Friday.",src/app/blog/page.tsx
+Blog,Newsletter,CTA,"Subscribe",src/app/blog/page.tsx
+Blog,Newsletter,Disclaimer,"No spam. Unsubscribe anytime.",src/app/blog/page.tsx
+Blog,CTA,Headline,"Ready to find your match?",src/app/blog/page.tsx
+Blog,CTA,Button,"See If You Qualify",src/app/blog/page.tsx
