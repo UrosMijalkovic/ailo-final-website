@@ -165,36 +165,42 @@ body {
   background-clip: text;
 }
 
-/* Button styles - App-style pill buttons */
+/* Button styles - Clean pill buttons */
 .btn-primary {
-  background: linear-gradient(180deg, #E1B98F 0%, #C4A07A 50%, #A87D55 100%);
+  background: #E1B98F;
   color: #262626;
   font-weight: 600;
   padding: 1rem 2rem;
   border-radius: 9999px;
-  transition: all 0.2s ease;
-  box-shadow: 0 2px 8px rgba(168, 125, 85, 0.3);
+  transition: background 0.15s ease, transform 0.1s ease;
 }
 
 .btn-primary:hover {
-  background: linear-gradient(180deg, #EDD4B5 0%, #E1B98F 50%, #C4A07A 100%);
-  transform: translateY(-1px);
-  box-shadow: 0 4px 20px rgba(225, 185, 143, 0.4);
+  background: #d4a878;
+}
+
+.btn-primary:active {
+  transform: scale(0.98);
 }
 
 .btn-secondary {
-  background: #675B4F;
+  background: rgba(103, 91, 79, 0.8);
+  backdrop-filter: blur(8px);
   color: #EBEBEB;
-  border: none;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   font-weight: 600;
   padding: 1rem 2rem;
   border-radius: 9999px;
-  transition: all 0.2s ease;
+  transition: background 0.15s ease, border-color 0.15s ease, transform 0.1s ease;
 }
 
 .btn-secondary:hover {
-  background: #7A6D5F;
-  color: #ffffff;
+  background: rgba(122, 109, 95, 0.9);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.btn-secondary:active {
+  transform: scale(0.98);
 }
 
 /* App-style Card backgrounds */

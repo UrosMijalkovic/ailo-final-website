@@ -1,74 +1,99 @@
 "use client";
 
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import { useState } from "react";
 
 const faqs = [
   {
-    question: "How is AILO different from dating apps?",
-    answer:
-      "Dating apps show you everyone nearby and let you guess. We use patented behavioral science to only show you people you're actually compatible with. Fewer matches, but matches that make sense.",
+    question: "How much does AILO cost?",
+    answer: "Traditional matchmakers charge $10,000–$50,000+ with no guarantees. AILO is a one-time membership at a fraction of that cost. We'll discuss pricing on your call based on your situation — and once you're in, you keep access for life.",
   },
   {
-    question: "What happens after I complete the questionnaire?",
-    answer:
-      "You'll book a strategy call with our team. We'll answer your questions and see if AILO is right for you. After joining, you'll complete the full Discovery Assessment in the app.",
+    question: "How is this different from dating apps?",
+    answer: "Dating apps show you everyone nearby and let you swipe based on photos. AILO only shows you people you're 70%+ compatible with based on behavioral science. No swiping, no endless options — just people who actually fit.",
   },
   {
-    question: "How long until I see matches?",
-    answer:
-      "Most members receive their first matches within 7-14 days of completing the assessment. Timing depends on our current pool and your compatibility profile.",
+    question: "How does the matching actually work?",
+    answer: "You take a 7-minute assessment based on 30 years of behavioral research. We measure 6 compatibility markers — how you communicate under stress, your core needs, conflict tolerance, decision-making style, energy levels, and worldview. Then we match you with people whose patterns complement yours.",
   },
   {
-    question: "What's the investment?",
-    answer:
-      "Traditional matchmakers charge $15,000-50,000 with no guarantees. AILO membership is a one-time investment of $999-1,499 depending on your situation — we'll discuss options on your call. Unlike monthly subscriptions, you pay once and keep access forever, including future matches, events, and all app updates.",
+    question: "What if I don't get any matches?",
+    answer: "Our member base is growing every month in South Florida. If you're in an area with fewer members, we'll be transparent about that on your call. We'd rather tell you to wait than waste your time.",
   },
   {
-    question: "I'm not in South Florida. Can I use AILO?",
-    answer:
-      "We're currently matching in South Florida only. Join the waitlist and you'll get priority access when we expand to your area.",
+    question: "Is AILO only in South Florida?",
+    answer: "Currently, yes. We're focused on building a quality community in South Florida (Palm Beach, Broward, Miami-Dade) before expanding. Join the waitlist if you're outside this area — you'll get priority access when we launch in your city.",
   },
   {
-    question: "What if I don't get matches?",
-    answer:
-      "That's what the 90-Day Guarantee is for. If you don't receive at least 3 compatible matches within 90 days, you get AILO Duo free for life plus VIP access to all our events.",
+    question: "How long until I get my first match?",
+    answer: "We don't rush matches. Dating apps trained people to expect instant results — that's exactly why they fail. We wait until there's a genuine 70%+ compatibility fit. It might take time. That's the point. We'd rather you wait for the right person than waste time on the wrong ones.",
+  },
+  {
+    question: "Is my data private?",
+    answer: "Yes. Your assessment results and personal information are never shared publicly. Match insights are only visible to you and your matched members. We don't sell data, ever.",
+  },
+  {
+    question: "What is AILO Duo?",
+    answer: (<>AILO Duo works two ways. <strong className="text-white">For singles:</strong> test compatibility with someone you&apos;re curious about — send them a code, both take the assessment, see your match. <strong className="text-white">For couples:</strong> understand your relationship dynamics, where you connect, where you clash, and how to grow together. Think of it as relationship intelligence — whether you&apos;re just starting out or years in.</>),
   },
 ];
 
 export function FAQ() {
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
   return (
-    <section className="section bg-white">
+    <section className="relative py-24 md:py-32 bg-[#0a0a0a]">
       <div className="container-custom">
         <div className="max-w-3xl mx-auto">
           {/* Header */}
           <div className="text-center mb-12">
-            <h2 className="font-[var(--font-playfair)] text-3xl md:text-4xl lg:text-5xl font-bold text-[var(--color-primary-dark)]">
-              Questions? We&apos;ve Got Answers.
+            <h2 className="font-[var(--font-playfair)] text-3xl md:text-4xl font-bold text-white mb-4">
+              Frequently Asked Questions
             </h2>
+            <p className="text-white/50">
+              Everything you need to know before applying.
+            </p>
           </div>
 
-          {/* Accordion */}
-          <Accordion type="single" collapsible className="w-full">
+          {/* FAQ Items */}
+          <div className="space-y-3">
             {faqs.map((faq, index) => (
-              <AccordionItem
+              <div
                 key={index}
-                value={`item-${index}`}
-                className="border-b border-gray-100"
+                className="border border-white/10 rounded-xl overflow-hidden"
               >
-                <AccordionTrigger className="text-left text-[var(--color-text-primary)] font-medium hover:text-[var(--color-primary)] py-5">
-                  {faq.question}
-                </AccordionTrigger>
-                <AccordionContent className="text-[var(--color-text-secondary)] pb-5">
-                  {faq.answer}
-                </AccordionContent>
-              </AccordionItem>
+                <button
+                  onClick={() => setOpenIndex(openIndex === index ? null : index)}
+                  className="w-full flex items-center justify-between p-5 text-left bg-white/5 hover:bg-white/8 transition-colors"
+                >
+                  <span className="text-white font-medium pr-4">{faq.question}</span>
+                  <svg
+                    className={`w-5 h-5 text-white/40 flex-shrink-0 transition-transform duration-200 ${
+                      openIndex === index ? "rotate-180" : ""
+                    }`}
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </button>
+                <div
+                  className={`overflow-hidden transition-all duration-200 ${
+                    openIndex === index ? "max-h-96" : "max-h-0"
+                  }`}
+                >
+                  <div className="px-5 pb-5 text-white/60 leading-relaxed">
+                    {faq.answer}
+                  </div>
+                </div>
+              </div>
             ))}
-          </Accordion>
+          </div>
         </div>
       </div>
     </section>

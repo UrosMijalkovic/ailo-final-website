@@ -1,211 +1,258 @@
 /**
  * WEBSITE COPY - Single Source of Truth
- *
- * Edit this file to update copy across the entire website.
- * All components pull from here.
- *
- * Structure: page.section.element
+ * Brand Voice: Confident. Premium. Sharp. Classy. Bold. Brave.
+ * No fluff. No apologies. You're not convincing — you're qualifying.
  */
 
 export const copy = {
   // ===========================================
-  // HOMEPAGE
+  // HOMEPAGE - 7 Section Structure
   // ===========================================
   homepage: {
+    // SECTION 1: HERO
     hero: {
-      badge: "Premium Matchmaking App · South Florida",
-      headline: "Your Last Investment in Dating. Ever.",
-      subhead: "Take a 7-minute assessment. Get matched only with people you're 70%+ compatible with. Powered by 30 years of behavioral science and a US patent.",
-      ctaPrimary: "See If You Qualify",
-      ctaSecondary: "Watch How It Works",
-      testimonialQuote: "We matched in 6 weeks. A year later, we're engaged.",
-      testimonialAttribution: "— Sarah & David, AILO Members",
+      badge: "Currently matching in South Florida. Nationwide soon.",
+      headline: "Your Time Is Too Valuable for Bad Matches.",
+      subhead: "Swiping doesn't work. Science does. We show you who actually fits.",
+      ctaPrimary: "Apply for Access",
+      ctaSecondary: "Learn More",
     },
+
+    // SECTION 2: THE PROBLEM
     problem: {
-      badge: "The Real Problem",
-      headline: "You've Done Everything Right. Dating Still Doesn't Work.",
+      headline: "You've Done Everything Right.",
+      headlineAccent: "Dating Still Doesn't Work.",
       subhead: "You're successful. You know what you want. So why is this so hard?",
       painPoints: [
         {
-          title: "You're not looking for hookups. But that's all apps deliver.",
-          description: "Endless swiping, zero serious prospects.",
+          title: "You're not looking for hookups.",
+          description: "But that's all apps deliver.",
         },
         {
-          title: "Dates that look good on paper. Zero chemistry in person.",
-          description: "Another wasted evening. Another dead end.",
+          title: "Great on paper. Zero chemistry in person.",
+          description: "Boring dates. No spark.",
         },
         {
-          title: "Compatibility? You won't know until you're 3 months in.",
-          description: "By then, you've already invested everything.",
+          title: "5 months in, the real problems start.",
+          description: "Conflict styles clash. Needs don't align. You're already emotionally drained.",
         },
         {
-          title: "You've tried everything. Same result.",
-          description: "Hinge. Bumble. Raya. Nothing works.",
+          title: "You've tried everything.",
+          description: "Same cycle. Same outcome.",
         },
       ],
-      closingLine1: "It's not you.",
-      closingLine2: "The system was never built for people like you.",
+      closer: "AILO doesn't fix you. It filters for you.",
     },
-    imagine: {
-      badge: "What Changes",
+
+    // SECTION 3: BEFORE YOU MEET (Value Proposition)
+    beforeYouMeet: {
       headline: "Before the First Date, You'll Know:",
-      points: [
-        { title: "Their communication style", description: "And whether it matches yours" },
-        { title: "How they handle conflict", description: "And if you're compatible under stress" },
-        { title: "What they actually need", description: "Not what their bio says" },
-        { title: "Why you'd work together", description: "Backed by 30 years of science" },
+      insights: [
+        {
+          title: "Their communication style",
+          description: "And whether it matches yours",
+        },
+        {
+          title: "How they handle conflict",
+          description: "And if you're compatible under stress",
+        },
+        {
+          title: "What they actually need",
+          description: "Not what their bio says",
+        },
+        {
+          title: "Why you'd work together",
+          description: "Backed by 30 years of science",
+        },
       ],
-      closing: "No more guessing. No more wasted time.",
+      closer: "No more guessing. No more wasted time.",
+      cta: "Apply for Access",
     },
-    founderStory: {
-      quote: "I spent 3 years on dating apps. Zero relationships. Then I found the science that actually predicts compatibility.",
-      name: "Haleh Gianni",
-      title: "Founder & CEO",
-      journeySteps: [
-        { label: "The Problem", text: "3 years on apps, nothing to show" },
-        { label: "The Discovery", text: "Found Dr. Zannah's 30-year research" },
-        { label: "The Insight", text: "Science solves what swiping can't" },
-        { label: "The Solution", text: "Built the app I needed" },
-      ],
-      cta: "Learn About the Science",
-    },
+
+    // SECTION 4: HOW IT WORKS
     howItWorks: {
-      headline: "3 Steps to Your Last First Date",
+      headline: "Compatibility Isn't a Feeling. It's a Pattern.",
+      subhead: "Dating apps match you on preferences. We match you on the behavioral patterns that predict whether you'll last.",
+      markersLabel: "AILO measures 6 compatibility markers",
+      markers: [
+        {
+          title: "Communication Under Stress",
+          description: "How you express needs when tensions rise",
+        },
+        {
+          title: "Core Emotional Needs",
+          description: "What you require to feel loved and secure",
+        },
+        {
+          title: "Conflict Tolerance",
+          description: "Your threshold for disagreement and friction",
+        },
+        {
+          title: "Decision-Making Style",
+          description: "How you process choices as a couple",
+        },
+        {
+          title: "Energy & Pace",
+          description: "Your rhythm of life and need for stimulation",
+        },
+        {
+          title: "Worldview & Perception",
+          description: "Whether you see problems or possibilities first",
+        },
+      ],
+      processLabel: "The Process",
       steps: [
         {
           number: "01",
-          title: "Complete the 7-Minute Assessment",
-          description: "Based on 30 years of behavioral science. Reveals your true compatibility profile.",
+          title: "Take the Assessment",
+          description: "7 minutes. 30 years of behavioral science. We measure how you actually show up — not who you think you are.",
         },
         {
           number: "02",
-          title: "Get Your Authentic Profile",
-          description: "No fake bios. AILO writes your profile based on who you actually are.",
+          title: "Understand Yourself First",
+          description: "AILO generates your personal profile and needs insight — so you know what you're looking for before you start looking.",
         },
         {
           number: "03",
-          title: "See Only 70%+ Matches",
-          description: "No swiping. Just people you're actually compatible with — and why.",
+          title: "Only Naturally Compatible Matches",
+          description: "You only see people above 70% compatibility. No endless swiping. Just people who actually fit.",
         },
       ],
-      cta: "Take the Assessment",
+      reveal: "Most couples discover these differences 6 months in.",
+      revealAccent: "We reveal them in 7 minutes.",
+      cta: "Apply for Access",
     },
-    sampleMatch: {
-      badge: "See What You Get",
-      headline: "This Is What a Match Looks Like",
-      subhead: "Real insights, not guesswork. Every match comes with a detailed compatibility breakdown.",
+
+    // SECTION 5: WHAT YOU GET (Product Demo)
+    whatYouGet: {
+      headline: "This Is a Match. Not a Guess.",
+      subhead: "Every match comes with a compatibility breakdown. You'll know why you fit before you meet.",
       categories: [
-        { name: "Magnetism", insight: "Natural physical and energetic attraction patterns align", score: 85 },
-        { name: "Communication", insight: "You both connect through deep conversation and quality time", score: 92 },
-        { name: "Tolerance", insight: "Compatible stress responses — both need space to process", score: 78 },
-        { name: "Motivators", insight: "Shared drivers: ambition, growth, and family values", score: 88 },
+        { name: "Magnetism", score: 93, description: "Natural attraction patterns" },
+        { name: "Connection", score: 97, description: "How you communicate" },
+        { name: "Comfort", score: 70, description: "Stress compatibility" },
+        { name: "Perception", score: 63, description: "How you see the world" },
+        { name: "Objectives", score: 87, description: "Life goals alignment" },
+        { name: "Timing", score: 93, description: "Relationship readiness" },
       ],
-      scoreExplanationTitle: "What This Score Means",
-      scoreExplanation: "A 78% match indicates strong foundational compatibility. Our research shows couples above 70% have significantly higher relationship satisfaction and longevity.",
-      cta: "See If You Qualify",
+      insightExample: "You both need space to process conflict. This prevents escalation.",
+      cta: "Apply for Access",
     },
-    testimonials: {
-      badge: "Real Results",
-      headline: "Stories from AILO Members",
-      subhead: "Real people finding real compatibility — not just matches.",
-      quotes: [
+
+    // SECTION 5: PROOF (Social Proof + Founders)
+    proof: {
+      headline: "Built on 30 Years of Research.",
+      subhead: "This isn't another dating app. It's the result of decades of studying what makes relationships actually work.",
+      stats: [
+        { value: "30+", label: "Years Research" },
+        { value: "13K+", label: "Satisfied Clients" },
+        { value: "0", label: "Complaints" },
+      ],
+      founders: [
         {
-          quote: "After 3 years on Hinge — 47 first dates, 0 relationships — AILO matched me in 6 weeks. Engaged 14 months later.",
-          name: "Sarah K.",
-          outcome: "Engaged after 14 months",
+          name: "Dr. Zannah Hackett",
+          title: "Chief Science Officer",
+          image: "/images/team/dr-zannah.jpg",
+          credentials: [
+            "30 years researching human nature",
+            "Creator of The Natural Mathematics of Man",
+            "Founder of Y.O.U. Institute",
+            "CA Board of Behavioral Sciences approved",
+          ],
         },
         {
-          quote: "The compatibility breakdown predicted exactly why my last 3 relationships failed. My AILO match is different. 8 months strong.",
+          name: "Haleh Gianni",
+          title: "CEO & Founder",
+          image: "/images/team/haleh.jpg",
+          credentials: [
+            "15 years as relationship coach",
+            "Trained in the Y.O.U. methodology",
+            "10+ years in systems engineering",
+            "Built the dating service she wished existed",
+          ],
+        },
+      ],
+      testimonialLabel: "What Members Say",
+      testimonials: [
+        {
+          quote: "3 years on apps. 0 relationships. AILO matched me in 6 weeks.",
+          name: "Sarah K.",
+          outcome: "Engaged",
+        },
+        {
+          quote: "I finally understand why I kept choosing wrong. AILO showed me what I actually need.",
           name: "Michael R.",
           outcome: "In relationship, 8 months",
         },
         {
-          quote: "I finally understand why I kept choosing the wrong people. AILO showed me what I actually need — and found someone who has it.",
+          quote: "One assessment. One investment. Done with dating apps forever.",
           name: "Jennifer L.",
           outcome: "Matched in 4 weeks",
         },
         {
-          quote: "One assessment. One investment. Done with dating apps forever. Worth every dollar.",
-          name: "Carlos M.",
+          quote: "The compatibility breakdown was scary accurate. We've been together 11 months now.",
+          name: "David T.",
+          outcome: "In relationship",
+        },
+        {
+          quote: "I was skeptical about the science. Then I met my fiancé on my second match.",
+          name: "Amanda R.",
+          outcome: "Engaged",
+        },
+        {
+          quote: "Finally, someone who gets that quality matters more than quantity.",
+          name: "Chris M.",
+          outcome: "Matched in 3 weeks",
+        },
+        {
+          quote: "The 7-minute assessment told me more than 3 years of therapy.",
+          name: "Nicole P.",
           outcome: "In relationship, 6 months",
         },
-      ],
-      stats: [
-        { value: "13,000+", label: "Assessments Completed" },
-        { value: "30+", label: "Years of Research" },
-        { value: "70%+", label: "Compatibility Threshold" },
-      ],
-    },
-    guarantee: {
-      badge: "Risk-Free",
-      headline: "The 90-Day Match Guarantee",
-      subhead: "3 compatible matches in 90 days. Or we make it right.",
-      intro: "If we don't deliver, you get:",
-      items: [
-        { title: "AILO Duo — Free for Life", description: "Full access to our compatibility assessment tool, forever" },
-        { title: "VIP Event Access", description: "Meet compatible singles in person at all AILO events" },
-        { title: "Priority Support", description: "Direct line to our team to optimize your profile and matches" },
-      ],
-      closing: "We stand behind the science. That's our promise.",
-      cta: "See If You Qualify",
-    },
-    events: {
-      badge: "Beyond the App",
-      headline: "Meet AILO Members In Person",
-      subhead: "Our relationship workshops are where real connections happen. Not awkward singles mixers — elegant events with guided compatibility discussions.",
-      eventTypes: [
-        { title: "Intimate Gatherings", frequency: "Weekly", size: "8-12 people", description: "Small group workshops focused on deep connection and self-discovery" },
-        { title: "Monthly Mixers", frequency: "Monthly", size: "30-50 people", description: "Elegant social events where meaningful conversations happen naturally" },
-        { title: "Signature Events", frequency: "Quarterly", size: "100+ people", description: "Exclusive experiences at Miami's most sought-after venues" },
-      ],
-      vipBadge: "AILO Members get VIP access to all events",
-      cta: "Become a Member",
-    },
-    duoTeaser: {
-      badge: "Already Dating Someone?",
-      headline: "Understand Your Relationship Dynamics",
-      subhead: "Take the compatibility assessment together. Discover why you connect, where you might clash, and how to grow stronger as a couple.",
-      features: ["See your compatibility score", "Understand communication styles", "Get relationship insights"],
-      cta: "Try AILO Duo",
-    },
-    faq: {
-      headline: "Questions? We've Got Answers.",
-      questions: [
         {
-          q: "How is AILO different from dating apps?",
-          a: "Dating apps show you everyone nearby and let you guess. We use patented behavioral science to only show you people you're actually compatible with. Fewer matches, but matches that make sense.",
-        },
-        {
-          q: "What happens after I complete the questionnaire?",
-          a: "You'll book a strategy call with our team. We'll answer your questions and see if AILO is right for you. After joining, you'll complete the full Discovery Assessment in the app.",
-        },
-        {
-          q: "How long until I see matches?",
-          a: "Most members receive their first matches within 7-14 days of completing the assessment. Timing depends on our current pool and your compatibility profile.",
-        },
-        {
-          q: "What's the investment?",
-          a: "Traditional matchmakers charge $15,000-50,000 with no guarantees. AILO membership is a one-time investment of $999-1,499 depending on your situation — we'll discuss options on your call. Unlike monthly subscriptions, you pay once and keep access forever, including future matches, events, and all app updates.",
-        },
-        {
-          q: "I'm not in South Florida. Can I use AILO?",
-          a: "We're currently matching in South Florida only. Join the waitlist and you'll get priority access when we expand to your area.",
-        },
-        {
-          q: "What if I don't get matches?",
-          a: "That's what the 90-Day Guarantee is for. If you don't receive at least 3 compatible matches within 90 days, you get AILO Duo free for life plus VIP access to all our events.",
+          quote: "No more wasted Saturday nights. Every date has potential now.",
+          name: "James W.",
+          outcome: "Dating exclusively",
         },
       ],
     },
+
+    // SECTION 7: THE PROMISE (Guarantee - Reframed)
+    thePromise: {
+      headline: "What We Promise",
+      promises: [
+        {
+          title: "Your time back.",
+          description: "We vet profiles so you don't waste hours on dead ends.",
+        },
+        {
+          title: "Fewer dates. Better odds.",
+          description: "Meet people who actually fit — not just anyone nearby.",
+        },
+        {
+          title: "Clarity over confusion.",
+          description: "Replace the guessing game with real compatibility insights.",
+        },
+        {
+          title: "A foundation, not a gamble.",
+          description: "Start relationships with understanding, not hope.",
+        },
+      ],
+      guarantee: {
+        headline: "3 Compatible Matches in 90 Days.",
+        subhead: "If we don't deliver, you get AILO Duo free for life + VIP event access.",
+        closer: "We stand behind the science.",
+      },
+      cta: "Apply for Access",
+    },
+
+    // SECTION 8: FINAL CTA
     finalCta: {
-      badge: "8 spots left for January",
-      headline: "This Is Your Last Investment in Dating",
-      subhead: "50 new members per month. Once you're in, you're in for life.",
-      socialProof: "Join 200+ members already matched in South Florida.",
-      ctaPrimary: "See If You Qualify",
-      divider: "OR",
-      nonSfText: "Not in South Florida? We're expanding soon.",
-      ctaSecondary: "Join the Waitlist for Your City",
+      headline: "This Is Your Last Investment in Dating.",
+      subhead: "One membership. Unlimited access.",
+      ctaPrimary: "Apply for Access",
+      secondaryText: "Not in South Florida?",
+      ctaSecondary: "Join the Waitlist",
     },
   },
 
@@ -286,7 +333,7 @@ export const copy = {
     },
     calendly: {
       title: "Schedule Your Call",
-      subtitle: "20 minutes • Video or Phone",
+      subtitle: "20 minutes",
       availability: "8 slots this week",
     },
     strategist: {
@@ -321,7 +368,7 @@ export const copy = {
   // ===========================================
   waitlist: {
     hero: {
-      headline: "You're In!",
+      headline: "You're In.",
       socialProof: "Join 1,200+ others waiting for AILO",
       subhead: "We're expanding beyond South Florida soon. Get priority access when we launch in your city.",
     },
@@ -378,7 +425,7 @@ export const copy = {
     },
     research: {
       headline: "The Research",
-      description: "Dr. Zannah Hackett spent 30 years studying human nature and relationship dynamics. Her work, \"The Natural Mathematics of Man,\" became the foundation for AILO.",
+      description: "Dr. Zannah Hackett spent 30 years studying human nature and relationship dynamics. Her work became the foundation for AILO.",
       quote: "Compatibility isn't about shared interests. It's about how two people's natural traits interact.",
     },
     markers: {
@@ -395,7 +442,7 @@ export const copy = {
     },
     whatThisMeans: {
       headline: "What This Means For You",
-      description: "Instead of discovering incompatibilities after 6 months of dating, AILO reveals them before your first conversation. No more wasted time. No more \"it just didn't work out.\"",
+      description: "Instead of discovering incompatibilities after 6 months of dating, AILO reveals them before your first conversation.",
     },
     assessment: {
       headline: "How the Assessment Works",
@@ -432,7 +479,7 @@ export const copy = {
     },
     cta: {
       headline: "Ready to discover your compatibility profile?",
-      button: "See If You Qualify",
+      button: "Apply for Access",
     },
   },
 
@@ -490,7 +537,7 @@ export const copy = {
     },
     cta: {
       headline: "Ready to experience the difference?",
-      button: "See If You Qualify",
+      button: "Apply for Access",
     },
   },
 
@@ -532,7 +579,7 @@ export const copy = {
       ],
     },
     testimonial: {
-      quote: "We'd been dating for 6 months and everything felt right, but I wanted to be sure. AILO Duo showed us exactly why we work — and the few things to watch for. Best decision we made.",
+      quote: "We'd been dating for 6 months and everything felt right, but I wanted to be sure. AILO Duo showed us exactly why we work — and the few things to watch for.",
       attribution: "— Rachel & James, Together 2 Years",
     },
     cta: {
@@ -558,7 +605,7 @@ export const copy = {
     },
     cta: {
       headline: "Ready to find your match?",
-      button: "See If You Qualify",
+      button: "Apply for Access",
     },
   },
 } as const;

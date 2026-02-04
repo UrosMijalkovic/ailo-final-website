@@ -6,11 +6,24 @@ const c = copy.homepage.hero;
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center bg-gradient-hero overflow-hidden">
-      {/* Background decoration */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-1/2 -right-1/4 w-[800px] h-[800px] rounded-full bg-[var(--color-accent)]/5 blur-3xl" />
-        <div className="absolute -bottom-1/4 -left-1/4 w-[600px] h-[600px] rounded-full bg-[var(--color-primary-light)]/10 blur-3xl" />
+    <section className="relative h-[85vh] min-h-[600px] flex items-center overflow-hidden">
+      {/* Video Background */}
+      <div className="absolute inset-0">
+        {/* Video with blur for softer, less distracting background */}
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          poster="/video/hero-ailo-poster.jpg"
+          className="absolute inset-0 w-full h-full object-cover object-top blur-[2px] scale-105"
+        >
+          <source src="/video/hero-ailo.mp4" type="video/mp4" />
+        </video>
+        {/* Base overlay */}
+        <div className="absolute inset-0 bg-black/40" />
+        {/* Gradient - dark bottom for section transition */}
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/70" />
       </div>
 
       <div className="container-custom relative z-10 pt-24 pb-16 md:pt-32 md:pb-24">
@@ -34,46 +47,27 @@ export function Hero() {
           </p>
 
           {/* CTAs */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10">
             <Link href="/apply" className="btn-primary text-lg px-8 py-4">
               {c.ctaPrimary}
             </Link>
             <a
               href="#how-it-works"
-              className="btn-secondary text-lg px-8 py-4 flex items-center gap-2"
+              className="btn-secondary text-lg px-8 py-4"
             >
               {c.ctaSecondary}
-              <svg
-                className="w-4 h-4"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
-                />
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
             </a>
           </div>
 
-          {/* Social Proof Quote */}
-          <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 max-w-lg mx-auto">
-            <p className="text-white/90 italic mb-3">
-              &ldquo;{c.testimonialQuote}&rdquo;
-            </p>
-            <p className="text-sm text-[var(--color-accent)] font-medium">
-              {c.testimonialAttribution}
-            </p>
+          {/* Social Proof Highlights */}
+          <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-2 text-sm text-white/50">
+            <span>30+ Years Research</span>
+            <span className="hidden sm:inline text-white/20">•</span>
+            <span>15,000+ Sessions</span>
+            <span className="hidden sm:inline text-white/20">•</span>
+            <span>0 Complaints</span>
           </div>
+
         </div>
       </div>
 

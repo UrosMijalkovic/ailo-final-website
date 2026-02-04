@@ -7,9 +7,11 @@ import { usePathname } from "next/navigation";
 
 const navLinks = [
   { href: "/", label: "Home" },
-  { href: "/the-science", label: "The Science" },
   { href: "/duo", label: "AILO Duo" },
+  { href: "/events", label: "AILO Events" },
+  { href: "/the-science", label: "The Science" },
   { href: "/about", label: "About" },
+  { href: "/blog", label: "Blog" },
 ];
 
 export function Header() {
@@ -51,20 +53,9 @@ export function Header() {
             shadow-[0_8px_32px_rgba(0,0,0,0.3)]
             overflow-hidden
             transition-all duration-100 ease-out
-            ${isScrolled ? "h-14 rounded-full" : "h-16 rounded-2xl"}
+            ${isScrolled ? "h-14" : "h-16"} rounded-full
           `}
         >
-          {/* Gradient overlay */}
-          <div
-            className={`
-              absolute inset-0
-              bg-gradient-to-r from-[var(--color-accent)]/10 via-transparent to-[var(--color-primary-light)]/10
-              pointer-events-none
-              transition-all duration-100 ease-out
-              ${isScrolled ? "rounded-full" : "rounded-2xl"}
-            `}
-          />
-
           {/* Logo */}
           <Link href="/" className="flex items-center relative z-10">
             <Image
@@ -103,7 +94,7 @@ export function Header() {
                 bg-[var(--color-accent)] text-[var(--color-primary-dark)]
                 rounded-full
                 hover:bg-[var(--color-accent)]/90
-                transition-all hover:shadow-[0_0_20px_rgba(212,175,55,0.4)]
+                transition-colors
               "
             >
               Request Access

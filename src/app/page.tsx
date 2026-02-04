@@ -1,17 +1,14 @@
 import { Header, Footer } from "@/components/layout";
 import {
   Hero,
+  Bridge,
   Problem,
-  Imagine,
-  FounderStory,
   HowItWorks,
-  SampleMatch,
-  Testimonials,
-  Guarantee,
-  Events,
-  DuoTeaser,
-  FAQ,
+  Proof,
+  FounderLetter,
+  ExperienceAilo,
   FinalCTA,
+  FAQ,
 } from "@/components/sections";
 
 export default function HomePage() {
@@ -19,41 +16,32 @@ export default function HomePage() {
     <>
       <Header />
       <main>
-        {/* Section 1: Hero - Aspirational, exclusive */}
+        {/* 1. HERO - Hook */}
         <Hero />
 
-        {/* Section 2: The Problem - Emotional anchor */}
+        {/* 2. BRIDGE - What is AILO */}
+        <Bridge />
+
+        {/* 3. PROBLEM - Pain */}
         <Problem />
 
-        {/* Section 3: Imagine - Vision casting (NEW) */}
-        <Imagine />
-
-        {/* Section 4: Founder Story - Trust builder (MOVED UP) */}
-        <FounderStory />
-
-        {/* Section 5: How It Works - Process */}
+        {/* 4. HOW IT WORKS - The Mechanism */}
         <HowItWorks />
 
-        {/* Section 6: Sample Match Preview - Value demonstration */}
-        <SampleMatch />
+        {/* 5. PROOF - Social Proof + Founders */}
+        <Proof />
 
-        {/* Section 7: Social Proof / Testimonials */}
-        <Testimonials />
+        {/* 6. FOUNDER LETTER - Personal Promise */}
+        <FounderLetter />
 
-        {/* Section 8: 90-Day Guarantee - Risk reversal (MOVED UP) */}
-        <Guarantee />
+        {/* 7. EXPERIENCE AILO - Multiple Entry Points */}
+        <ExperienceAilo />
 
-        {/* Section 9: Events */}
-        <Events />
-
-        {/* Section 10: Try AILO Duo */}
-        <DuoTeaser />
-
-        {/* Section 11: FAQ (with price transparency) */}
-        <FAQ />
-
-        {/* Section 12: Final CTA (with urgency) */}
+        {/* 8. FINAL CTA - Close */}
         <FinalCTA />
+
+        {/* 9. FAQ - SEO + Objections */}
+        <FAQ />
       </main>
 
       <Footer />
