@@ -35,9 +35,9 @@ export function FounderLetter() {
           </h2>
 
           {/* Two column: Video + Promises */}
-          <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center mb-10 sm:mb-12">
+          <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-stretch mb-10 sm:mb-12">
             {/* Left: Video placeholder */}
-            <div className="relative">
+            <div className="relative flex flex-col">
               <div className="aspect-[4/3] rounded-xl sm:rounded-2xl bg-white/5 border border-white/10 overflow-hidden">
                 {/* Placeholder content */}
                 <div className="absolute inset-0 flex flex-col items-center justify-center">
@@ -60,11 +60,11 @@ export function FounderLetter() {
             </div>
 
             {/* Right: Promises */}
-            <div>
+            <div className="flex flex-col">
               <p className="text-sm uppercase tracking-widest text-[var(--color-primary)] mb-5">
                 Our Promise to You
               </p>
-              <div className="space-y-3 sm:space-y-4">
+              <div className="flex flex-col justify-between flex-1 gap-3">
                 {promises.map((promise, index) => (
                   <div
                     key={index}
