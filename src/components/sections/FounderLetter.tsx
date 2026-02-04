@@ -21,7 +21,7 @@ const promises = [
 
 export function FounderLetter() {
   return (
-    <section className="relative py-24 md:py-32 bg-gradient-to-b from-[#0a0a0a] to-[#111]">
+    <section className="relative py-16 sm:py-24 md:py-32 bg-gradient-to-b from-[#0a0a0a] to-[#111]">
       <div className="container-custom">
         <div className="max-w-5xl mx-auto">
           {/* Label */}
@@ -30,20 +30,20 @@ export function FounderLetter() {
           </p>
 
           {/* Headline */}
-          <h2 className="font-[var(--font-playfair)] text-3xl md:text-4xl lg:text-5xl font-bold text-center text-white mb-16 leading-tight">
-            &ldquo;I Built the Dating Service<br className="hidden md:block" /> I Wished Existed.&rdquo;
+          <h2 className="font-[var(--font-playfair)] text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center text-white mb-10 sm:mb-16 leading-tight">
+            &ldquo;I Built the Dating Service I Wished Existed.&rdquo;
           </h2>
 
           {/* Two column: Video + Promises */}
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-12">
+          <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center mb-10 sm:mb-12">
             {/* Left: Video placeholder */}
-            <div className="relative lg:scale-110 lg:origin-left">
-              <div className="aspect-[4/3] rounded-2xl bg-white/5 border border-white/10 overflow-hidden">
+            <div className="relative">
+              <div className="aspect-[4/3] rounded-xl sm:rounded-2xl bg-white/5 border border-white/10 overflow-hidden">
                 {/* Placeholder content */}
                 <div className="absolute inset-0 flex flex-col items-center justify-center">
                   {/* Play button */}
-                  <div className="w-16 h-16 rounded-full bg-[var(--color-accent)]/20 border border-[var(--color-accent)]/30 flex items-center justify-center mb-4 cursor-pointer hover:bg-[var(--color-accent)]/30 transition-colors">
-                    <svg className="w-6 h-6 text-[var(--color-accent)] ml-1" fill="currentColor" viewBox="0 0 24 24">
+                  <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-[var(--color-accent)]/20 border border-[var(--color-accent)]/30 flex items-center justify-center mb-4 cursor-pointer hover:bg-[var(--color-accent)]/30 transition-colors">
+                    <svg className="w-5 h-5 sm:w-6 sm:h-6 text-[var(--color-accent)] ml-1" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M8 5v14l11-7z" />
                     </svg>
                   </div>
@@ -64,11 +64,11 @@ export function FounderLetter() {
               <p className="text-sm uppercase tracking-widest text-[var(--color-primary)] mb-5">
                 Our Promise to You
               </p>
-              <div className="space-y-4">
+              <div className="space-y-3 sm:space-y-4">
                 {promises.map((promise, index) => (
                   <div
                     key={index}
-                    className="flex items-start gap-4 p-5 rounded-xl bg-[var(--color-primary)]/5 border border-[var(--color-primary)]/10 hover:border-[var(--color-primary)]/25 transition-colors"
+                    className="flex items-start gap-3 sm:gap-4 p-4 sm:p-5 rounded-xl bg-[var(--color-primary)]/5 border border-[var(--color-primary)]/10 hover:border-[var(--color-primary)]/25 transition-colors"
                   >
                     {/* Check icon */}
                     <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[var(--color-primary)]/15 flex items-center justify-center mt-0.5">
@@ -104,7 +104,7 @@ export function FounderLetter() {
 
           {/* CTA */}
           <div className="text-center">
-            <Link href="/apply" className="btn-primary text-lg px-8 py-4">
+            <Link href="/apply" className="btn-primary text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4">
               Apply for Access
             </Link>
           </div>

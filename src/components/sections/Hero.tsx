@@ -6,7 +6,7 @@ const c = copy.homepage.hero;
 
 export function Hero() {
   return (
-    <section className="relative h-[85vh] min-h-[600px] flex items-center overflow-hidden">
+    <section className="relative h-[100svh] min-h-[560px] md:h-[85vh] md:min-h-[600px] flex items-center overflow-hidden">
       {/* Video Background */}
       <div className="absolute inset-0">
         {/* Video with blur for softer, less distracting background */}
@@ -37,7 +37,7 @@ export function Hero() {
           </div>
 
           {/* Headline */}
-          <h1 className="font-[var(--font-playfair)] text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+          <h1 className="font-[var(--font-playfair)] text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
             {c.headline}
           </h1>
 
@@ -47,13 +47,13 @@ export function Hero() {
           </p>
 
           {/* CTAs */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10">
-            <Link href="/apply" className="btn-primary text-lg px-8 py-4">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-10 px-4 sm:px-0">
+            <Link href="/apply" className="btn-primary text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto text-center">
               {c.ctaPrimary}
             </Link>
             <a
               href="#how-it-works"
-              className="btn-secondary text-lg px-8 py-4"
+              className="btn-secondary text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto text-center"
             >
               {c.ctaSecondary}
             </a>

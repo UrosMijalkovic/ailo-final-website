@@ -41,12 +41,12 @@ export function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section className="relative py-24 md:py-32 bg-[#0a0a0a]">
+    <section className="relative py-16 sm:py-24 md:py-32 bg-[#0a0a0a]">
       <div className="container-custom">
         <div className="max-w-3xl mx-auto">
           {/* Header */}
           <div className="text-center mb-12">
-            <h2 className="font-[var(--font-playfair)] text-3xl md:text-4xl font-bold text-white mb-4">
+            <h2 className="font-[var(--font-playfair)] text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4">
               Frequently Asked Questions
             </h2>
             <p className="text-white/50">
@@ -63,7 +63,7 @@ export function FAQ() {
               >
                 <button
                   onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                  className="w-full flex items-center justify-between p-5 text-left bg-white/5 hover:bg-white/8 transition-colors"
+                  className="w-full flex items-center justify-between p-4 sm:p-5 text-left bg-white/5 hover:bg-white/8 transition-colors"
                 >
                   <span className="text-white font-medium pr-4">{faq.question}</span>
                   <svg
@@ -87,7 +87,7 @@ export function FAQ() {
                     openIndex === index ? "max-h-96" : "max-h-0"
                   }`}
                 >
-                  <div className="px-5 pb-5 text-white/60 leading-relaxed">
+                  <div className="px-4 sm:px-5 pb-4 sm:pb-5 text-white/60 text-sm sm:text-base leading-relaxed">
                     {faq.answer}
                   </div>
                 </div>

@@ -4,7 +4,7 @@ const c = copy.homepage.problem;
 
 export function Problem() {
   return (
-    <section className="relative py-24 md:py-32 bg-[#0a0a0a]">
+    <section className="relative py-16 sm:py-24 md:py-32 bg-[#0a0a0a]">
       <div className="container-custom">
         <div className="max-w-5xl mx-auto">
           {/* Badge */}
@@ -17,10 +17,10 @@ export function Problem() {
 
           {/* Headline */}
           <div>
-            <h2 className="font-[var(--font-playfair)] text-4xl md:text-5xl lg:text-6xl font-bold text-center text-white mb-4 leading-tight">
+            <h2 className="font-[var(--font-playfair)] text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center text-white mb-4 leading-tight">
               {c.headline}
             </h2>
-            <p className="text-center text-2xl md:text-3xl text-white/25 mb-6 font-light">
+            <p className="text-center text-xl sm:text-2xl md:text-3xl text-white/25 mb-6 font-light">
               {c.headlineAccent}
             </p>
             <p className="text-center text-lg text-white/40 mb-16">
@@ -29,7 +29,7 @@ export function Problem() {
           </div>
 
           {/* Pain Points - 2x2 Premium Grid */}
-          <div className="grid md:grid-cols-2 gap-5 mb-16">
+          <div className="grid md:grid-cols-2 gap-4 sm:gap-5 mb-12 sm:mb-16">
             {c.painPoints.map((point, index) => {
               const isHighlighted = index === 2;
 
@@ -37,7 +37,7 @@ export function Problem() {
                 <div
                   key={index}
                   className={`
-                    group relative rounded-2xl p-7 md:p-8 border cursor-pointer
+                    group relative rounded-2xl p-5 sm:p-7 md:p-8 border cursor-pointer
                     ${isHighlighted
                       ? "bg-gradient-to-br from-[#8B3A3A]/20 via-[#8B3A3A]/10 to-transparent border-[#D4736B]/30 hover:border-[#D4736B]/60"
                       : "bg-white/5 border-white/8 hover:border-[#D4736B]/40"
@@ -64,7 +64,7 @@ export function Problem() {
 
           {/* Closer */}
           <div className="text-center">
-            <p className="text-2xl md:text-3xl lg:text-4xl font-[var(--font-playfair)] text-[var(--color-accent)] font-medium">
+            <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-[var(--font-playfair)] text-[var(--color-accent)] font-medium">
               {c.closer}
             </p>
           </div>

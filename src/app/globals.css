@@ -170,9 +170,15 @@ body {
   background: #E1B98F;
   color: #262626;
   font-weight: 600;
-  padding: 1rem 2rem;
+  padding: 0.75rem 1.5rem;
   border-radius: 9999px;
   transition: background 0.15s ease, transform 0.1s ease;
+}
+
+@media (min-width: 640px) {
+  .btn-primary {
+    padding: 1rem 2rem;
+  }
 }
 
 .btn-primary:hover {
@@ -189,9 +195,15 @@ body {
   color: #EBEBEB;
   border: 1px solid rgba(255, 255, 255, 0.1);
   font-weight: 600;
-  padding: 1rem 2rem;
+  padding: 0.75rem 1.5rem;
   border-radius: 9999px;
   transition: background 0.15s ease, border-color 0.15s ease, transform 0.1s ease;
+}
+
+@media (min-width: 640px) {
+  .btn-secondary {
+    padding: 1rem 2rem;
+  }
 }
 
 .btn-secondary:hover {

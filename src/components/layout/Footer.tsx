@@ -29,8 +29,8 @@ const socialLinks = [
 export function Footer() {
   return (
     <footer className="bg-[#111] border-t border-white/10">
-      <div className="container-custom py-20 md:py-28">
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-12 md:gap-16">
+      <div className="container-custom py-12 sm:py-20 md:py-28">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-8 sm:gap-12 md:gap-16">
           {/* Logo & Tagline */}
           <div className="col-span-2">
             <Link href="/" className="inline-block mb-6">
@@ -121,11 +121,11 @@ export function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-32 pt-10 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-white/30 text-sm">
+        <div className="mt-12 sm:mt-20 md:mt-32 pt-8 sm:pt-10 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-white/30 text-xs sm:text-sm">
             © {new Date().getFullYear()} AILO. All rights reserved.
           </p>
-          <p className="text-white/30 text-sm">
+          <p className="text-white/30 text-xs sm:text-sm">
             Currently matching in South Florida
           </p>
         </div>

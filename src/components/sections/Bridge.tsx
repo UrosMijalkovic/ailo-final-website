@@ -1,6 +1,6 @@
 export function Bridge() {
   return (
-    <section className="relative py-16 md:py-20 bg-[#0a0a0a]">
+    <section className="relative py-12 sm:py-16 md:py-20 bg-[#0a0a0a]">
       <div className="container-custom">
         <div className="max-w-3xl mx-auto text-center">
           {/* Positioning */}
@@ -9,7 +9,7 @@ export function Bridge() {
           </p>
 
           {/* Punch line */}
-          <p className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-3">
+          <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-3">
             No swiping. No guessing. No wasted time.
           </p>
 

@@ -19,11 +19,11 @@ export function HowItWorks() {
   const currentScreenshot = hoveredStep !== null ? stepScreenshots[hoveredStep] : stepScreenshots[0];
 
   return (
-    <section id="how-it-works" className="relative py-24 md:py-32 bg-[#111]">
+    <section id="how-it-works" className="relative py-16 sm:py-24 md:py-32 bg-[#111]">
       <div className="container-custom">
         {/* Headline */}
-        <div className="max-w-4xl mx-auto text-center mb-20">
-          <h2 className="font-[var(--font-playfair)] text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+        <div className="max-w-4xl mx-auto text-center mb-12 sm:mb-20">
+          <h2 className="font-[var(--font-playfair)] text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6 leading-tight">
             {c.headline}
           </h2>
           <p className="text-lg md:text-xl text-white/50 max-w-2xl mx-auto">
@@ -32,7 +32,7 @@ export function HowItWorks() {
         </div>
 
         {/* Part 1: The 6 Markers - Solution Zone */}
-        <div className="relative mb-24 -mx-4 px-4 py-16 md:-mx-8 md:px-8">
+        <div className="relative mb-16 sm:mb-24 -mx-4 px-4 py-10 sm:py-16 md:-mx-8 md:px-8">
           {/* Teal gradient background */}
           <div className="absolute inset-0 bg-gradient-to-b from-[var(--color-primary)]/10 via-[var(--color-primary)]/5 to-transparent" />
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[var(--color-primary)]/5 to-transparent" />
@@ -41,11 +41,11 @@ export function HowItWorks() {
             <p className="text-center text-sm uppercase tracking-widest text-[var(--color-primary)] mb-10">
               {c.markersLabel}
             </p>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl mx-auto">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-5 max-w-5xl mx-auto">
               {c.markers.map((marker, index) => (
                 <div
                   key={index}
-                  className="group p-6 rounded-2xl bg-[var(--color-primary)]/5 border border-[var(--color-primary)]/10 hover:border-[var(--color-primary)]/30 hover:bg-[var(--color-primary)]/10 transition-colors"
+                  className="group p-4 sm:p-6 rounded-2xl bg-[var(--color-primary)]/5 border border-[var(--color-primary)]/10 hover:border-[var(--color-primary)]/30 hover:bg-[var(--color-primary)]/10 transition-colors"
                 >
                   <div className="flex items-start gap-4">
                     <span className="flex-shrink-0 w-10 h-10 rounded-xl bg-[var(--color-primary)]/20 flex items-center justify-center text-[var(--color-primary)] text-sm font-semibold">
@@ -67,7 +67,7 @@ export function HowItWorks() {
         </div>
 
         {/* Part 2: The Process with iPhone */}
-        <div className="grid lg:grid-cols-2 gap-16 items-center max-w-6xl mx-auto mb-20">
+        <div className="grid lg:grid-cols-2 gap-10 sm:gap-16 items-center max-w-6xl mx-auto mb-12 sm:mb-20">
           {/* Left: Steps */}
           <div>
             <p className="text-sm uppercase tracking-widest text-[var(--color-accent)] mb-8">
@@ -126,16 +126,16 @@ export function HowItWorks() {
           </div>
 
           {/* Right: iPhone Mockup */}
-          <div className="flex justify-center lg:justify-end">
+          <div className="flex justify-center lg:justify-end order-first lg:order-last mb-8 lg:mb-0">
             <div className="relative">
               {/* iPhone frame */}
-              <div className="relative w-[260px] md:w-[280px] rounded-[3rem] bg-gradient-to-b from-zinc-700 to-zinc-900 p-2 shadow-2xl shadow-black/50">
+              <div className="relative w-[220px] sm:w-[260px] md:w-[280px] rounded-[2.5rem] sm:rounded-[3rem] bg-gradient-to-b from-zinc-700 to-zinc-900 p-2 shadow-2xl shadow-black/50">
                 {/* Inner bezel */}
-                <div className="rounded-[2.5rem] bg-black p-1">
+                <div className="rounded-[2rem] sm:rounded-[2.5rem] bg-black p-1">
                   {/* Dynamic Island */}
-                  <div className="absolute top-4 left-1/2 -translate-x-1/2 w-20 h-6 bg-black rounded-full z-10" />
+                  <div className="absolute top-3 sm:top-4 left-1/2 -translate-x-1/2 w-16 sm:w-20 h-5 sm:h-6 bg-black rounded-full z-10" />
                   {/* Screen */}
-                  <div className="rounded-[2.25rem] overflow-hidden bg-[#0a0a0a]">
+                  <div className="rounded-[1.75rem] sm:rounded-[2.25rem] overflow-hidden bg-[#0a0a0a]">
                     <Image
                       src={currentScreenshot}
                       alt="AILO App"
@@ -152,15 +152,15 @@ export function HowItWorks() {
 
         {/* Reveal statement */}
         <div className="max-w-3xl mx-auto text-center">
-          <p className="text-2xl md:text-3xl text-white/40 mb-2">
+          <p className="text-lg sm:text-2xl md:text-3xl text-white/40 mb-2">
             {c.reveal}
           </p>
-          <p className="text-2xl md:text-3xl font-semibold text-white mb-12">
+          <p className="text-lg sm:text-2xl md:text-3xl font-semibold text-white mb-8 sm:mb-12">
             {c.revealAccent}
           </p>
 
           {/* CTA */}
-          <Link href="/apply" className="btn-primary text-lg px-8 py-4">
+          <Link href="/apply" className="btn-primary text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4">
             {c.cta}
           </Link>
         </div>

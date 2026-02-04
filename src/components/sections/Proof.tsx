@@ -9,11 +9,11 @@ export function Proof() {
   const doubledTestimonials = [...c.testimonials, ...c.testimonials];
 
   return (
-    <section className="relative py-24 md:py-32 bg-[#0a0a0a]">
+    <section className="relative py-16 sm:py-24 md:py-32 bg-[#0a0a0a]">
       <div className="container-custom">
         {/* Headline */}
-        <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="font-[var(--font-playfair)] text-4xl md:text-5xl font-bold text-white mb-4">
+        <div className="max-w-3xl mx-auto text-center mb-10 sm:mb-16">
+          <h2 className="font-[var(--font-playfair)] text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
             {c.headline}
           </h2>
           <p className="text-lg text-white/50">
@@ -22,10 +22,10 @@ export function Proof() {
         </div>
 
         {/* Stats Row */}
-        <div className="flex flex-wrap justify-center gap-12 md:gap-20 mb-8">
+        <div className="flex flex-wrap justify-center gap-8 sm:gap-12 md:gap-20 mb-8">
           {c.stats.map((stat, index) => (
             <div key={index} className="text-center">
-              <div className="text-5xl md:text-6xl font-bold text-[var(--color-accent)] mb-2">
+              <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-[var(--color-accent)] mb-2">
                 {stat.value}
               </div>
               <div className="text-white/50 text-sm uppercase tracking-wide">
@@ -36,8 +36,8 @@ export function Proof() {
         </div>
 
         {/* Patent Badge */}
-        <div className="flex justify-center mb-20">
-          <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs bg-white/5 border border-white/10 text-white/40">
+        <div className="flex justify-center mb-12 sm:mb-20 px-4">
+          <span className="inline-flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full text-[10px] sm:text-xs bg-white/5 border border-white/10 text-white/40 text-center">
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
             </svg>
@@ -46,11 +46,11 @@ export function Proof() {
         </div>
 
         {/* Founders */}
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-20">
+        <div className="grid md:grid-cols-2 gap-4 sm:gap-8 max-w-4xl mx-auto mb-12 sm:mb-20">
           {c.founders.map((founder, index) => (
             <div
               key={index}
-              className="flex flex-col sm:flex-row gap-6 p-6 rounded-2xl bg-white/5 border border-white/8"
+              className="flex flex-col sm:flex-row gap-4 sm:gap-6 p-4 sm:p-6 rounded-2xl bg-white/5 border border-white/8"
             >
               {/* Photo placeholder */}
               <div className="flex-shrink-0">
@@ -91,8 +91,8 @@ export function Proof() {
           {/* Marquee container */}
           <div className="relative">
             {/* Fade edges */}
-            <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-[#0a0a0a] to-transparent z-10 pointer-events-none" />
-            <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-[#0a0a0a] to-transparent z-10 pointer-events-none" />
+            <div className="absolute left-0 top-0 bottom-0 w-8 sm:w-20 bg-gradient-to-r from-[#0a0a0a] to-transparent z-10 pointer-events-none" />
+            <div className="absolute right-0 top-0 bottom-0 w-8 sm:w-20 bg-gradient-to-l from-[#0a0a0a] to-transparent z-10 pointer-events-none" />
 
             {/* Scrolling container */}
             <div className="overflow-hidden">
@@ -100,7 +100,7 @@ export function Proof() {
                 {doubledTestimonials.map((testimonial, index) => (
                   <div
                     key={index}
-                    className="flex-shrink-0 w-[350px] bg-white/5 border border-white/8 rounded-2xl p-6 hover:border-[var(--color-accent)]/20"
+                    className="flex-shrink-0 w-[280px] sm:w-[350px] bg-white/5 border border-white/8 rounded-2xl p-4 sm:p-6 hover:border-[var(--color-accent)]/20"
                   >
                     {/* Quote */}
                     <p className="text-white/70 mb-4 leading-relaxed">
