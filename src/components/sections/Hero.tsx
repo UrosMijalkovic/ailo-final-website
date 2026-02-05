@@ -15,10 +15,10 @@ export function Hero() {
           muted
           loop
           playsInline
-          poster="/video/hero-ailo-final-poster.jpg"
+          poster="/video/herovideo-poster.jpg"
           className="absolute inset-0 w-full h-full object-cover object-top blur-[2px] scale-105"
         >
-          <source src="/video/hero-ailo-final.mp4" type="video/mp4" />
+          <source src="/video/herovideo-optimized.mp4" type="video/mp4" />
         </video>
         {/* Base overlay */}
         <div className="absolute inset-0 bg-black/40" />

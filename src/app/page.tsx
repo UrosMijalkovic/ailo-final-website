@@ -43,7 +43,6 @@ export default function HomePage() {
         {/* 9. FAQ - SEO + Objections */}
         <FAQ />
       </main>
-
       <Footer />
     </>
   );

@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 const faqs = [
   {
@@ -39,6 +40,23 @@ const faqs = [
 
 export function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  // Track scroll progress for animations
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start end", "end start"]
+  });
+
+  // Create staggered transforms for each FAQ item
+  const faqTransforms = faqs.map((_, index) => {
+    const start = index * 0.03;
+    const end = start + 0.15;
+    return {
+      opacity: useTransform(scrollYProgress, [start, end, 0.7, 0.85], [0, 1, 1, 0]),
+      y: useTransform(scrollYProgress, [start, end, 0.7, 0.85], [60, 0, 0, -30])
+    };
+  });
 
   return (
     <section className="relative py-16 sm:py-24 md:py-32 bg-[#0a0a0a]">
@@ -55,10 +73,14 @@ export function FAQ() {
           </div>
 
           {/* FAQ Items */}
-          <div className="space-y-3">
+          <div ref={containerRef} className="space-y-3">
             {faqs.map((faq, index) => (
-              <div
+              <motion.div
                 key={index}
+                style={{
+                  opacity: faqTransforms[index].opacity,
+                  y: faqTransforms[index].y
+                }}
                 className="border border-white/10 rounded-xl overflow-hidden"
               >
                 <button
@@ -91,7 +113,7 @@ export function FAQ() {
                     {faq.answer}
                   </div>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>

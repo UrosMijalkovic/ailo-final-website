@@ -12,6 +12,37 @@ const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
 const c = copy.homepage.howItWorks;
 
+// Icons for each compatibility marker
+const markerIcons = [
+  // Magnetism - magnet/attraction
+  <svg key="magnetism" className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5}>
+    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+  </svg>,
+  // Connection - people connected
+  <svg key="connection" className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5}>
+    <path strokeLinecap="round" strokeLinejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />
+  </svg>,
+  // Comfort - heart/warmth
+  <svg key="comfort" className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5}>
+    <path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+  </svg>,
+  // Perception - eye/insight
+  <svg key="perception" className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5}>
+    <path strokeLinecap="round" strokeLinejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
+    <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+  </svg>,
+  // Objectives - target/goal
+  <svg key="objectives" className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5}>
+    <path strokeLinecap="round" strokeLinejoin="round" d="M12 21a9 9 0 100-18 9 9 0 000 18z" />
+    <path strokeLinecap="round" strokeLinejoin="round" d="M12 15a3 3 0 100-6 3 3 0 000 6z" />
+    <path strokeLinecap="round" strokeLinejoin="round" d="M12 12h.01" />
+  </svg>,
+  // Timing - clock
+  <svg key="timing" className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5}>
+    <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+  </svg>,
+];
+
 const stepImages = [
   {
     src: "/images/gallery/process-phone.png",
@@ -63,7 +94,7 @@ export function HowItWorks() {
         {/* Headline */}
         <div className="max-w-4xl mx-auto text-center mb-12 sm:mb-20">
           <h2 className="font-[var(--font-playfair)] text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6 leading-tight">
-            {c.headline}
+            Compatibility Isn&apos;t a Feeling.<br />It&apos;s a Pattern.
           </h2>
           <p className="text-lg md:text-xl text-white/50 max-w-2xl mx-auto">
             {c.subhead}
@@ -73,7 +104,7 @@ export function HowItWorks() {
         {/* Part 1: The 6 Markers - Solution Zone */}
         <motion.div
           ref={markersRef}
-          className="relative mb-16 sm:mb-24 py-10 sm:py-16 px-4 sm:px-8 rounded-2xl sm:rounded-3xl overflow-hidden border border-[var(--color-accent)]/30"
+          className="relative mb-16 sm:mb-24 py-10 sm:py-16 px-4 sm:px-8 rounded-2xl sm:rounded-3xl overflow-hidden"
           style={{ scale, opacity }}
         >
           {/* Teal gradient background */}
@@ -100,11 +131,11 @@ export function HowItWorks() {
               {c.markers.map((marker, index) => (
                 <div
                   key={index}
-                  className="group p-4 sm:p-6 rounded-2xl bg-[#0a0a0a]/60 backdrop-blur-sm border border-[var(--color-accent)]/20 hover:border-[var(--color-accent)]/50 transition-colors"
+                  className="group p-4 sm:p-6 rounded-2xl bg-[var(--color-primary)]/15 backdrop-blur-sm border border-[var(--color-accent)]/20 hover:border-[var(--color-accent)]/50 transition-colors"
                 >
                   <div className="flex items-start gap-4">
-                    <span className="flex-shrink-0 w-10 h-10 rounded-xl bg-gradient-to-br from-[var(--color-accent)]/20 to-[var(--color-accent)]/5 border border-[var(--color-accent)]/40 flex items-center justify-center text-[var(--color-accent)] text-sm font-bold">
-                      {index + 1}
+                    <span className="flex-shrink-0 w-10 h-10 rounded-xl bg-gradient-to-br from-[var(--color-accent)]/20 to-[var(--color-accent)]/5 border border-[var(--color-accent)]/40 flex items-center justify-center text-[var(--color-accent)]">
+                      {markerIcons[index]}
                     </span>
                     <div>
                       <h3 className="text-white font-semibold mb-1">
