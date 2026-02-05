@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const journeySteps = [
   {
@@ -33,9 +34,16 @@ export function FounderStory() {
           </div>
 
           {/* Video Placeholder - More prominent */}
-          <div className="aspect-video bg-[var(--color-primary)]/10 rounded-2xl mb-8 flex items-center justify-center relative overflow-hidden group cursor-pointer">
-            {/* Background gradient */}
-            <div className="absolute inset-0 bg-gradient-to-br from-[var(--color-primary)]/20 to-transparent" />
+          <div className="aspect-video rounded-2xl mb-8 flex items-center justify-center relative overflow-hidden group cursor-pointer">
+            {/* Background Image */}
+            <Image
+              src="/images/gallery/haleh-video-placeholder.jpg"
+              alt="Haleh Gianni - Founder of AILO"
+              fill
+              className="object-cover"
+            />
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-black/30" />
 
             <div className="text-center relative z-10">
               <div className="w-20 h-20 rounded-full bg-white/90 flex items-center justify-center mx-auto mb-4 shadow-lg group-hover:scale-110 transition-transform">
@@ -89,19 +97,14 @@ export function FounderStory() {
           {/* Credentials Box */}
           <div className="card-teal p-6 md:p-8">
             <div className="flex flex-col md:flex-row items-center gap-6">
-              {/* Avatar Placeholder */}
-              <div className="gold-circle w-20 h-20 md:w-24 md:h-24 flex-shrink-0">
-                <svg
-                  className="w-10 h-10 md:w-12 md:h-12 text-[var(--color-text-inverse)]"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
-                    clipRule="evenodd"
-                  />
-                </svg>
+              {/* Haleh Photo */}
+              <div className="relative w-20 h-20 md:w-24 md:h-24 flex-shrink-0 rounded-2xl overflow-hidden">
+                <Image
+                  src="/images/gallery/haleh.jpg"
+                  alt="Haleh Gianni"
+                  fill
+                  className="object-cover"
+                />
               </div>
 
               <div className="flex-1 text-center md:text-left">
@@ -109,13 +112,13 @@ export function FounderStory() {
                   Haleh Gianni
                 </h3>
                 <p className="text-[var(--color-accent)] text-sm mb-3">
-                  Founder & CEO
+                  CEO & Founder
                 </p>
                 <ul className="text-sm text-white/70 space-y-1">
                   <li>• 15 years as relationship coach</li>
-                  <li>• 10+ years as Senior Systems Engineer</li>
                   <li>• Trained in the Y.O.U. methodology</li>
-                  <li>• Built AILO to solve her own dating frustration</li>
+                  <li>• 10+ years in systems engineering</li>
+                  <li>• Built the dating service she wished existed</li>
                 </ul>
               </div>
             </div>

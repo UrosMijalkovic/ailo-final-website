@@ -148,10 +148,13 @@ export default function BookCallPage() {
               {/* Meet Your Strategist */}
               <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6">
                 <div className="flex items-center gap-4 mb-4">
-                  <div className="w-16 h-16 rounded-full bg-[var(--color-accent)] flex items-center justify-center flex-shrink-0">
-                    <svg className="w-8 h-8 text-[var(--color-primary-dark)]" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
-                    </svg>
+                  <div className="relative w-16 h-16 rounded-full overflow-hidden flex-shrink-0">
+                    <Image
+                      src="/images/gallery/haleh.jpg"
+                      alt="Haleh Gianni"
+                      fill
+                      className="object-cover"
+                    />
                   </div>
                   <div>
                     <h3 className="font-semibold text-white">

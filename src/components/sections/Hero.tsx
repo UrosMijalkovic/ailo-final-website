@@ -15,10 +15,10 @@ export function Hero() {
           muted
           loop
           playsInline
-          poster="/video/hero-ailo-poster.jpg"
+          poster="/video/hero-ailo-final-poster.jpg"
           className="absolute inset-0 w-full h-full object-cover object-top blur-[2px] scale-105"
         >
-          <source src="/video/hero-ailo.mp4" type="video/mp4" />
+          <source src="/video/hero-ailo-final.mp4" type="video/mp4" />
         </video>
         {/* Base overlay */}
         <div className="absolute inset-0 bg-black/40" />
@@ -63,7 +63,7 @@ export function Hero() {
           <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-2 text-sm text-white/50">
             <span>30+ Years Research</span>
             <span className="hidden sm:inline text-white/20">•</span>
-            <span>15,000+ Sessions</span>
+            <span>13K+ Satisfied Clients</span>
             <span className="hidden sm:inline text-white/20">•</span>
             <span>0 Complaints</span>
           </div>

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const promises = [
   {
@@ -38,18 +39,25 @@ export function FounderLetter() {
           <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-stretch mb-10 sm:mb-12">
             {/* Left: Video placeholder */}
             <div className="relative flex flex-col">
-              <div className="aspect-[4/3] rounded-xl sm:rounded-2xl bg-white/5 border border-white/10 overflow-hidden">
-                {/* Placeholder content */}
+              <div className="relative aspect-[4/3] rounded-xl sm:rounded-2xl overflow-hidden group cursor-pointer">
+                {/* Background Image */}
+                <Image
+                  src="/images/gallery/haleh-video-placeholder.jpg"
+                  alt="Haleh Gianni - Founder of AILO"
+                  fill
+                  className="object-cover"
+                />
+                {/* Overlay */}
+                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors" />
+                {/* Play button */}
                 <div className="absolute inset-0 flex flex-col items-center justify-center">
-                  {/* Play button */}
-                  <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-[var(--color-accent)]/20 border border-[var(--color-accent)]/30 flex items-center justify-center mb-4 cursor-pointer hover:bg-[var(--color-accent)]/30 transition-colors">
-                    <svg className="w-5 h-5 sm:w-6 sm:h-6 text-[var(--color-accent)] ml-1" fill="currentColor" viewBox="0 0 24 24">
+                  <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-white/90 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform shadow-lg">
+                    <svg className="w-5 h-5 sm:w-6 sm:h-6 text-[var(--color-primary)] ml-1" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M8 5v14l11-7z" />
                     </svg>
                   </div>
-                  <p className="text-white/30 text-sm">Video coming soon</p>
+                  <p className="text-white/80 text-sm font-medium">Video coming soon</p>
                 </div>
-
               </div>
 
               {/* Founder info below video */}

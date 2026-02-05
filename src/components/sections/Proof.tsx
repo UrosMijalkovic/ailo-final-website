@@ -1,6 +1,12 @@
 "use client";
 
+import Image from "next/image";
 import { copy } from "@/lib/copy";
+
+const founderImages: Record<string, string> = {
+  "Dr. Zannah Hackett": "/images/gallery/drzannah.jpg",
+  "Haleh Gianni": "/images/gallery/haleh1.jpg",
+};
 
 const c = copy.homepage.proof;
 
@@ -46,23 +52,24 @@ export function Proof() {
         </div>
 
         {/* Founders */}
-        <div className="grid md:grid-cols-2 gap-4 sm:gap-8 max-w-4xl mx-auto mb-12 sm:mb-20">
+        <div className="grid md:grid-cols-2 gap-4 sm:gap-6 max-w-5xl mx-auto mb-12 sm:mb-20">
           {c.founders.map((founder, index) => (
             <div
               key={index}
-              className="flex flex-col sm:flex-row gap-4 sm:gap-6 p-4 sm:p-6 rounded-2xl bg-white/5 border border-white/8"
+              className="flex flex-row rounded-2xl bg-white/5 border border-white/8 overflow-hidden"
             >
-              {/* Photo placeholder */}
-              <div className="flex-shrink-0">
-                <div className="w-24 h-24 rounded-2xl bg-gradient-to-br from-[var(--color-primary)]/20 to-[var(--color-accent)]/20 flex items-center justify-center">
-                  <span className="text-3xl font-bold text-white/20">
-                    {founder.name.split(" ").map(n => n[0]).join("")}
-                  </span>
-                </div>
+              {/* Founder Photo - Vertical Banner */}
+              <div className="relative w-40 sm:w-48 flex-shrink-0 aspect-[3/4]">
+                <Image
+                  src={founderImages[founder.name] || "/images/gallery/haleh.jpg"}
+                  alt={founder.name}
+                  fill
+                  className="object-cover object-top scale-105"
+                />
               </div>
 
               {/* Info */}
-              <div>
+              <div className="p-5 sm:p-6 flex flex-col justify-center">
                 <h3 className="text-xl font-semibold text-white mb-1">
                   {founder.name}
                 </h3>
@@ -120,9 +127,6 @@ export function Proof() {
             </div>
           </div>
 
-          <p className="text-center text-white/20 text-xs mt-8">
-            * Real member results. UGC videos coming soon.
-          </p>
         </div>
       </div>
 
