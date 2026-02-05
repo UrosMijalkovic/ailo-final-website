@@ -1,9 +1,10 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import dynamic from "next/dynamic";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { copy } from "@/lib/copy";
 
 // Dynamically import Lottie to avoid SSR issues
@@ -29,6 +30,17 @@ const stepImages = [
 export function HowItWorks() {
   const [activeStep, setActiveStep] = useState<number>(0);
   const [animationData, setAnimationData] = useState<object | null>(null);
+  const markersRef = useRef<HTMLDivElement>(null);
+
+  // Track scroll progress for markers box animation
+  const { scrollYProgress } = useScroll({
+    target: markersRef,
+    offset: ["start end", "start center"]
+  });
+
+  // Transform scroll progress to scale (0.85 -> 1)
+  const scale = useTransform(scrollYProgress, [0, 1], [0.85, 1]);
+  const opacity = useTransform(scrollYProgress, [0, 0.5], [0.6, 1]);
 
   useEffect(() => {
     fetch("/animations/dna-helix.json")
@@ -59,7 +71,11 @@ export function HowItWorks() {
         </div>
 
         {/* Part 1: The 6 Markers - Solution Zone */}
-        <div className="relative mb-16 sm:mb-24 py-10 sm:py-16 px-4 sm:px-8 rounded-2xl sm:rounded-3xl overflow-hidden">
+        <motion.div
+          ref={markersRef}
+          className="relative mb-16 sm:mb-24 py-10 sm:py-16 px-4 sm:px-8 rounded-2xl sm:rounded-3xl overflow-hidden border border-[var(--color-accent)]/30"
+          style={{ scale, opacity }}
+        >
           {/* Teal gradient background */}
           <div className="absolute inset-0 bg-gradient-to-b from-[var(--color-primary)]/10 via-[var(--color-primary)]/5 to-transparent" />
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[var(--color-primary)]/5 to-transparent" />
@@ -77,17 +93,17 @@ export function HowItWorks() {
           )}
 
           <div className="relative z-10">
-            <p className="text-center text-sm uppercase tracking-widest text-[var(--color-primary)] mb-10">
+            <p className="text-center text-base sm:text-lg md:text-xl uppercase tracking-widest text-[var(--color-accent)] font-semibold mb-10">
               {c.markersLabel}
             </p>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-5 max-w-5xl mx-auto">
               {c.markers.map((marker, index) => (
                 <div
                   key={index}
-                  className="group p-4 sm:p-6 rounded-2xl bg-[var(--color-primary)]/5 border border-[var(--color-primary)]/10 hover:border-[var(--color-primary)]/30 hover:bg-[var(--color-primary)]/10 transition-colors"
+                  className="group p-4 sm:p-6 rounded-2xl bg-[#0a0a0a]/60 backdrop-blur-sm border border-[var(--color-accent)]/20 hover:border-[var(--color-accent)]/50 transition-colors"
                 >
                   <div className="flex items-start gap-4">
-                    <span className="flex-shrink-0 w-10 h-10 rounded-xl bg-[var(--color-primary)]/20 flex items-center justify-center text-[var(--color-primary)] text-sm font-semibold">
+                    <span className="flex-shrink-0 w-10 h-10 rounded-xl bg-gradient-to-br from-[var(--color-accent)]/20 to-[var(--color-accent)]/5 border border-[var(--color-accent)]/40 flex items-center justify-center text-[var(--color-accent)] text-sm font-bold">
                       {index + 1}
                     </span>
                     <div>
@@ -103,7 +119,7 @@ export function HowItWorks() {
               ))}
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* Part 2: The Process with iPhone */}
         <div className="grid lg:grid-cols-2 gap-10 sm:gap-16 items-center max-w-6xl mx-auto mb-12 sm:mb-20">

@@ -9,22 +9,33 @@ const c = copy.homepage.problem;
 
 export function Problem() {
   const containerRef = useRef<HTMLDivElement>(null);
+  const closerRef = useRef<HTMLDivElement>(null);
 
-  // Track scroll progress for this section
+  // Track scroll progress for banner animation
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start end", "start center"]
+  });
+
+  // Track scroll progress for closer text
+  const { scrollYProgress: closerScrollProgress } = useScroll({
+    target: closerRef,
+    offset: ["start end", "end start"]
   });
 
   // Transform scroll progress to scale (0.85 -> 1)
   const scale = useTransform(scrollYProgress, [0, 1], [0.85, 1]);
   const opacity = useTransform(scrollYProgress, [0, 0.5], [0.6, 1]);
 
+  // Closer text scroll-linked animation
+  const closerOpacity = useTransform(closerScrollProgress, [0, 0.3, 0.7, 1], [0, 1, 1, 0]);
+  const closerY = useTransform(closerScrollProgress, [0, 0.3, 0.7, 1], [40, 0, 0, -40]);
+
   // Double the pain points for seamless loop
   const doubledPainPoints = [...c.painPoints, ...c.painPoints];
 
   return (
-    <section className="pt-16 sm:pt-24 md:pt-32 pb-8 sm:pb-12 bg-[#0a0a0a]">
+    <section className="pt-8 sm:pt-12 md:pt-16 bg-[#0a0a0a]">
       <div className="container-custom" ref={containerRef}>
         {/* Animated image container */}
         <motion.div
@@ -77,42 +88,34 @@ export function Problem() {
         {/* Scrolling container */}
         <div className="overflow-hidden">
           <div className="flex gap-4 sm:gap-6 animate-marquee-slow hover:pause-animation">
-            {doubledPainPoints.map((point, index) => {
-              const isHighlighted = (index % c.painPoints.length) === 2;
-
-              return (
-                <div
-                  key={index}
-                  className={`
-                    flex-shrink-0 w-[260px] sm:w-[300px] md:w-[340px] rounded-xl p-4 sm:p-5 border backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.3)]
-                    ${isHighlighted
-                      ? "bg-white/10 border-[#D4736B]/70 border-2"
-                      : "bg-white/10 border-white/20"
-                    }
-                  `}
-                >
-                  <h3 className="text-sm sm:text-base font-semibold mb-1.5 leading-snug text-white/90">
-                    {point.title}
-                  </h3>
-                  <p className={`
-                    text-xs sm:text-sm leading-relaxed
-                    ${isHighlighted ? "text-white/60" : "text-white/50"}
-                  `}>
-                    {point.description}
-                  </p>
-                </div>
-              );
-            })}
+            {doubledPainPoints.map((point, index) => (
+              <div
+                key={index}
+                className="flex-shrink-0 w-[260px] sm:w-[300px] md:w-[340px] rounded-xl p-4 sm:p-5 border backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.3)] bg-white/10 border-white/20"
+              >
+                <h3 className="text-sm sm:text-base font-semibold mb-1.5 leading-snug text-white/90">
+                  {point.title}
+                </h3>
+                <p className="text-xs sm:text-sm leading-relaxed text-white/50">
+                  {point.description}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </div>
 
-      {/* Closer */}
-      <div className="container-custom mt-10 sm:mt-14">
-        <div className="text-center">
-          <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-[var(--font-playfair)] text-[var(--color-accent)] font-medium">
-            {c.closer}
-          </p>
+      {/* Closer with gradient transition */}
+      <div ref={closerRef} className="relative mt-8 sm:mt-10 md:mt-12 pt-8 sm:pt-10 md:pt-12 pb-8 sm:pb-10 md:pb-12 bg-gradient-to-b from-[#0a0a0a] to-[#111]">
+        <div className="container-custom">
+          <div className="text-center">
+            <motion.p
+              style={{ opacity: closerOpacity, y: closerY }}
+              className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-[var(--font-playfair)] text-[var(--color-accent)] font-medium"
+            >
+              {c.closer}
+            </motion.p>
+          </div>
         </div>
       </div>
 
